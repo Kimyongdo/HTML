@@ -83,7 +83,7 @@
 }
 #wrapper{
   z-index: 5;
-    margin: 0 auto;
+    margin-left: 200px;
     width: 100%;
     zoom: 1;
 }
