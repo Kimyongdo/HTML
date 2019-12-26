@@ -18,16 +18,18 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
         <style>
-            /* .carousel-inner img{
-              width: 100%;
-              height: 30%;
-            } */
+            
 
             .carousel-indicators > li{
               background-color: black;
             }
             .carousel-indicators .active{
               background-color: red;
+            }
+
+            .carousel-inner>.item{
+                position: relative;
+                display: none;
             }
 
             .menu_footer{
@@ -41,32 +43,26 @@
             .foundBox{
                 float: left; width: 33%;
             }
+
+            .carousel{
+                position: relative;
+                height: 580px;
+            }
+
+            div{
+                display: block;
+            }
+
+            .fill{
+                width: 100%;
+                height: 100%;
+                background-position: center;
+                background-size: cover;
+            }
         </style>
 
     </head>
     <body>
-
-        <div>
-            <img src="./imgs/isaac.png">
-            
-        </div>
-
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-            <div class="container">
-                <!-- 2.2 모바일 화면일 때 오른쪽 끝에 햄버거 아이콘 모양의 메뉴를 내비게이션이 변경 -->
-                <button class="navbar-toggler" data-toggle="collapse" data-target="#navMenu"><span class="navbar-toggler-icon"></span></button>
-                <!-- 2.3 내비메뉴 -->
-                <div class="collapse navbar-collapse" id="navMenu">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a href="#" class="nav-link">메뉴</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">창업정보</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">브랜드</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">매장찾기</a></li>
-                    </ul>
-                </div>
-
-            </div>
-        </nav>
         
         <div id="demo" class="carousel slide" data-ride="carousel">
         
@@ -80,12 +76,12 @@
             <!-- The slideshow -->
             <div class="carousel-inner">
               <div class="carousel-item active fill">
-                <img class="img center-block"src="./imgs/resize/sydney.jpg" alt="toast1" width="auto" height="auto">
+                <img class="fill" src="./imgs/toast1.jpg" alt="toast1" width="auto" height="auto">
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item fill">
                 <img src="./imgs/toast2.jpg" alt="toast2" width="auto" height="auto">
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item fill">
                 <img src="./imgs/toast3.jpg" alt="toast3" width="auto" height="auto">
               </div>
             </div>
@@ -134,27 +130,6 @@
                 </div>
               </div>
 
-          </div>
-
-          <!-- 4. footer -->
-        <div id="ft">
-            <div class="w1100 center">
-                <div class="logo_footer">
-                    <img src="http://www.isaac-toast.co.kr/img/common/logo_footer.png">
-                </div>
-                <div class="menu_footer">
-                    <a href="#">회사소개</a>
-                    <a href="#">제휴/제안</a>
-                    <a href="#">고객의 소리</a>
-                    <a href="#">이용약관</a>
-                    <a href="#">개인정보처리방침</a>
-                    <a href="#">이메일무단수집거부</a>
-                    <a href="#">점주공간</a>
-
-                </div>
-            </div>
-            
-            
         </div>
 
 
