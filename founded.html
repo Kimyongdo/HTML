@@ -15,6 +15,8 @@
     <!-- 부트스트랩을 써야함. -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
+
+    <link rel="stylesheet" href="css">
     <style>
         div#founded{
             border: 1px solid gray;
@@ -27,7 +29,7 @@
         h5#cardtitle{
             color: white;   
             font-size: 15px; padding: 10px; 
-                background-color: black;
+                background-color: #222222;
                  border-top-left-radius: 8px;
                 border-top-right-radius: 8px;
         }
@@ -41,14 +43,24 @@
             padding: 0px;
             margin: 0px;
             font-size: 18px;
+          
+      
         }
 
         p#subtitle{
             font-size: 12px;
             /* 자동줄바꿈 취소 */
             white-space: nowrap;
+            color: #666666;   
+        }
 
-            
+        #content{
+          color: #666666;
+        }
+
+        #doc{
+         padding-left: 15px; 
+         color: #666666;
         }
     </style>
 
@@ -58,7 +70,7 @@
 
 <body>
   
-    <div class="container mt-3">
+    <div class="container" style="margin-top: 80px;">
 
 
    <h2 style="margin-bottom:30px;"><strong>가맹 절차</strong></h2>
@@ -206,34 +218,35 @@
  
    <!-- class =row -->
         </div>
+        
 <!--  -->
        
 </div>
-            
+<p style="text-align: end; margin-top: -20px; color: #666666;">*가맹점 의뢰로부터 개점까지 약 30일 소요됩니다.</p>
         
 
         <h2 style="margin-bottom: 20px;"><strong>가맹 비용</strong></h2>
         <div>
 
         
-        <table border="1px" style="border: 1px solid lightgray" >
+        <table border="1px" style="border: 1px solid lightgray">
             <tr >
                 <td colspan="2" style="text-align: center; background-color:whitesmoke; padding:15px" ><strong>최초 가맹비</strong></td>
                 <td style="text-align: center; color: red;"><strong>없음</strong></td>
-                <td style="padding-left: 10px;">최초오픈, 양도/양수, 재계약 가맹비 발생 일체 없음</td>
+                <td  id=content style="padding-left: 10px; width: 61%;">최초오픈, 양도/양수, 재계약 가맹비 발생 일체 없음</td>
             </tr>
 
             <tr>
                 <td colspan="2" style=" text-align: center;background-color:whitesmoke; padding:15px"><strong>교육비</strong></td>
-                <td style=" padding-left: 10px; padding-right: 10px; text-align: center;"><strong>1人당 300만원</strong</td>
-                <td style="padding-left: 10px;">메뉴레시피 및 점포운영 Know-How 제공, 본사 교육장5일/직영현장 5일(총2주)</td>
+                <td style=" padding-left: 15px; padding-right: 15px; text-align: center;"><strong>1人당 300만원</strong</td>
+                <td  id=content style="padding-left: 10px;">메뉴레시피 및 점포운영 Know-How 제공, 본사 교육장5일/직영현장 5일(총2주)</td>
             </tr>
 
             <tr>
                 <td rowspan="2" style=" text-align: center;background-color:whitesmoke; padding: 30px;"><strong>인테리어비</strong></td>
                 <td style="background-color:whitesmoke; padding: 30px; padding-top: 50px; padding-bottom: 50px;" ><strong>내/외장공사</strong></td>
                 <td style="text-align: center; padding-left: 20px; padding-right: 20px;"><strong>2,310만원</strong></td>
-                <td style="padding-left: 10px;">벽체공사, 천정공사, 바닥공사, 전기공사, 설비공사</td>
+                <td  id=content style="padding-left: 10px;">벽체공사, 천정공사, 바닥공사, 전기공사, 설비공사</td>
                 
                 
             </tr>
@@ -242,20 +255,20 @@
              
                 <td style="text-align: center; background-color:whitesmoke; padding: 15px;"><strong>사인(간판)공사</strong></td>
                 <td style="text-align: center;"><strong>410만원</strong></td>
-                <td style="padding-left: 10px;">간판(전면LED잔넬, 돌출원형1조, 내/외부사인</td>
+                <td  id=content style="padding-left: 10px;">간판(전면LED잔넬, 돌출원형1조, 내/외부사인</td>
             </tr>
 
             <tr>
-                <td colspan="2" style="text-align: center; background-color:whitesmoke; padding:20px"><strong>기기장비비</strong></td>
+                <td colspan="2" style="text-align: center; background-color:whitesmoke; padding:30px"><strong>기기장비비</strong></td>
                 <td style="text-align: center;"><strong>1,790만원</strong></td>
-                <td style="padding-left: 10px;">빵기계, 핫플레이트, 커피머신, 온수기, 믹서기, 제비익, 냉장/냉동고(업소용)<br>
+                <td id=content style="padding-left: 10px;">빵기계, 핫플레이트, 커피머신, 온수기, 믹서기, 제비익, 냉장/냉동고(업소용)<br>
                 테이블 냉장고, 토핑냉장고, 양배추 절단기, 브리타 필터, 수전(파우엣), 포스기기 등등 </td>
             </tr>
 
            
 
             <tr>
-                <td colspan="2" style="text-align: center; background-color: gray; color: white;"><strong>총계</strong></td>
+                <td colspan="2" style="text-align: center; background-color: gray; color: white; padding:13px"><strong>총계</strong></td>
                 <td style="text-align: center; background-color: gray; color: white;"><strong>4,810만원</strong></td>
                 <td style="background-color: gray; color: white; padding-left: 10px;" >부가세 별도 (점포임대차비용 제외) </td>
             </tr>
@@ -265,57 +278,57 @@
  
 <!-- 가맹비용 마지막 -->
 
-<p style="text-align: end; padding-right: 100px;">* 월 로열티 110,000원(vat포함) 발생</p t>
+<p style="text-align: end; color: #666666; margin-top: 15px; font-size: 17px;">* 월 로열티 110,000원(vat포함) 발생</p t>
 
- <p style="margin-bottom:2px;"><strong>별도/추가공사</strong></p>   
-<p style="font-size: 15px;">철거(천정,바닥,벽체)공사, 냉/난방(기기)공사, 전기증설공사, 외부테라스공사, 추가간판설치, 소방/정화공사, 음향기기시설, 어닝, 외장 파사드공사</p>
-<h3 style="margin-bottom: 20px; margin-top: 50px;" ><strong>개점시 필요서류</strong></h3>
+ <p style="margin-bottom:2px; font-size: 20px;"><strong>별도/추가공사</strong></p>   
+<p style="font-size: 17px; color: #666666;">철거(천정,바닥,벽체)공사, 냉/난방(기기)공사, 전기증설공사, 외부테라스공사, 추가간판설치, 소방/정화공사, 음향기기시설, 어닝, 외장 파사드공사</p>
+<p style="margin-bottom: 20px; margin-top: 50px; font-size: 35px;" ><strong>개점시 필요서류</strong></p>
 <div>
-    <p style="font-size: 17px;"><strong>1. 영업허가</strong> (구청 미원 서류접수, 위생과 발급)</p> 
+    <p ><strong style="font-size: 18px;">1. 영업허가</strong> (구청 미원 서류접수, 위생과 발급)</p> 
     <div>
         <table>
             <tr>
-                <td style="padding: 2px; padding-left: 6px; padding-right: 6px; background-color: black; color: white">구비서류</td>
-                <td style="padding-left: 15px;"> ① 점포건축물관리대장 1부(구청민원실)</td>
+                <td style="padding: 2px; padding-left: 10px; padding-right: 10px; background-color: #333333; color: white">구비서류</td>
+                <td id=doc> ① 점포건축물관리대장 1부(구청민원실)</td>
             </tr>
-
+           
             <tr>
                 <td></td>
-                <td style="padding-left: 15px;">  ② 점포도시계획획인원 1부(구청민원실)</td>
+                <td id=doc>  ② 점포도시계획획인원 1부(구청민원실)</td>
             </tr>
             
             <tr>
                 <td></td>
-                <td style="padding-left: 15px;">  ③ 영업허가신청서 1부 (구청미원실)</td>
+                <td id=doc>  ③ 영업허가신청서 1부 (구청미원실)</td>
             </tr>
 
             <tr>
                 <td></td>
-                <td style="padding-left: 15px;">  ④ 보건증 (보건소:주민등록증/소요시간 약 5일)</td>
+                <td id=doc>  ④ 보건증 (보건소:주민등록증/소요시간 약 5일)</td>
             </tr>
 
             <tr>
                 <td></td>
-                <td style="padding-left: 15px;">  ⑤ 교육필증 1부(각 요식업조합 - 위생과 문의)</td>
+                <td id=doc>  ⑤ 교육필증 1부(각 요식업조합 - 위생과 문의)</td>
             </tr>
         </table>
 
-        <p style="font-size: 17px; margin-top: 20px;"><strong>2. 사업자등록증 </strong>(개업 후 20일 이내 관할 세무서 민원봉사실로 신청)</p> 
+        <p style="margin-top: 20px;"><strong style="font-size: 19px; " >2. 사업자등록증 </strong>(개업 후 20일 이내 관할 세무서 민원봉사실로 신청)</p> 
 
         <table>
             <tr>
                 <td style="padding: 2px; padding-left: 6px; padding-right: 6px; background-color: black; color: white">구비서류</td>
-                <td style="padding-left: 15px;"> ① 사업자등록신청서 2부(세무서 민원봉사실 신청)</td>
+                <td id=doc> ① 사업자등록신청서 2부(세무서 민원봉사실 신청)</td>
             </tr>
 
             <tr>
                 <td></td>
-                <td style="padding-left: 15px;">  ② 주민등록본 2부 영업허가증 사본 1부</td>
+                <td id=doc>  ② 주민등록본 2부 영업허가증 사본 1부</td>
             </tr>
             
             <tr>
                 <td></td>
-                <td style="padding-left: 15px;">  ③ 전세임대차계약서 사본 1부 동업계약서(공동사업자인 경우)</td>
+                <td id=doc>  ③ 전세임대차계약서 사본 1부 동업계약서(공동사업자인 경우)</td>
             </tr>
 
           
@@ -325,8 +338,8 @@
     
    
 
-    <p style="margin-top: 20px; font-size: 17px;"><strong>3. 상가임대차 계약사 사본</strong></p>
-    <p style="margin-top: 20px; font-size: 17px;"><strong>4. 보건증, 신분증, 주민등록등본1부</strong></p>
+    <p style="margin-top: 20px; font-size: 19px;"><strong>3. 상가임대차 계약사 사본</strong></p>
+    <p style="margin-top: 20px; font-size: 19px;"><strong>4. 보건증, 신분증, 주민등록등본1부</strong></p>
 </div>
 
 

@@ -5,22 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- 이걸 중간에 쓰고 -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    
+    <!-- 부트스트랩을 써야함. -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+   
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+
+    <script>
+  
+//처음 시작시 40~49로 시작
+        $(document).ready(function(){
+             $("select option[value='40~49']").attr("selected", true);
+        });
+
+    </script>
+  
+    
+    
+    
+    
+
+    <style>
+        #question{
+            font-weight: bold;
+            font-size: 13px;
+            background-color: whitesmoke;
+            padding: 13px;
+            padding-left:25px;
+            padding-right: 40px;
+        }
+
+        #question2{
+            padding-left: 30px;
+            
+        }
+        #question2 input{
+            border: 1px solid lightgray;
+        }
+
+        #submit{
+            background-color: #333333; 
+            border: 1px solid black; 
+            color: white; 
+            padding: 5px;
+            padding-left: 15px; 
+            padding-right: 15px; 
+            font-size: 14px;
+        }
+       
+       #reset{
+        background-color: white; 
+        border: 1px solid black; 
+        color: black; 
+        padding: 5px; 
+        padding-left: 15px;
+         padding-right: 15px; 
+         font-size: 14px;
+       }
+        
+    </style>
+
+<script src='https://www.google.com/recaptcha/api.js'></script> 
+<script type="text/javascript"> /* 서브밋 전에 리캡챠 체크 여부 를 확인합니다. */ 
+function FormSubmit() { if (grecaptcha.getResponse() == ""){ 
+    alert("리캡챠를 체크해야 합니다."); 
+    return false;
+    }  else { return true; } } 
+    </script>
+
+
+
 </head>
 <body>
-    <table border="1px">
+    <div class="container" style="margin-top: 80px;"> 
+
+   <form>
+
+    <table border="1px" style="border: 1px solid #ececec;">
         <tr>
-            <td>성명*</td>
-            <td colspan="3"><input type="text"></td>
+            <td id="question" style="border-top:2px solid black;"><strong>성명 </strong><span style="color:red;">*</span></td>
+            <td id="question2" colspan="3" style="border-top:2px solid black; width: 1000px;" ><input type="text" required></td>
         </tr>
         
         <tr>
-            <td>비밀번호*</td>
-            <td colspan="3"><input type="text"></td>
+            <td id="question">비밀번호 <span style="color:red;">*</span></td>
+            <td id="question2" colspan="3"><input style="width: 140px;" type="password" required></td>
         </tr>
 
         <tr>
-            <td >연락처*</td>
-            <td colspan="3"><select name="phone">
+            <td id="question" >연락처 <span style="color:red;">*</span></td>
+            <td id="question2" colspan="3";>
+                <select style="padding: 2px;" name="phone;" >
                 <option value="a">010</option>
                 <option value="a">011</option>
                 <option value="a">016</option>
@@ -43,61 +126,70 @@
                 <option value="a">063</option>
                 <option value="a">064</option>
             </select>
-             <input type="text">
-             <input type="text">
+             <input type="text" style="width: 120px;" required>
+             <input type="text" style="width: 120px;" required>
         </td>
         </tr>
 
         <tr>
-            <td >이메일</td>
-            <td colspan="3"><input type="email"></td>
+            <td id="question" >이메일</td>
+            <td id="question2" colspan="3"><input type="email"></td>
         </tr>
         
         <tr>
-            <td>연령대</td>
-            <td><select name="phone">
+            <td id="question" >연령대</td>
+            <td id="question2" ><select name="phone">
                 <option value="a">20~29</option>
                 <option value="a">30~39</option>
-                <option value="a">40~49</option>
+                <option value="a" selected>40~49</option>
                 <option value="a">50~59</option>
                 <option value="a">60~69</option>
                 <option value="a">70~79</option>
                 </td>
-            <td>성별</td>
-            <td><input type="radio" name="rg1" id="rb1" value="male">
+            <td id="question" style="width: 154px;">성별</td>
+            <td id="question2">
                 <label for="rb1">남자</label>
+                <input type="radio" name="rg1" id="rb1" value="male">
+                <label for="rb2">여자</label>
                 <input type="radio" name="rg1" id="rb2" value="female">
-                <label for="rb2">여자</label></td>
+            </td>
         </tr>
 
         <tr>
-            <td>점포유무</td>
-            <td><input type="radio" name="rg2" id="rb3" value="yes">
-                <label for="rb1">있음</label>
+            <td id="question">점포유무</td>
+            <td id="question2">
+                <label for="rb3">있음</label>
+                <input type="radio" name="rg2" id="rb3" value="yes">
+                <label for="rb4">없음</label>
                 <input type="radio" name="rg2" id="rb4" value="no">
-                <label for="rb2">없음</label></td>
+               
+             
 
-                <td>사업경험</td>
-            <td><input type="radio" name="rg2" id="rb3" value="yes">
-                <label for="rb1">있음</label>
-                <input type="radio" name="rg2" id="rb4" value="no">
-                <label for="rb2">없음</label></td>
+            <td id="question" >사업경험</td>
+            <td id="question2">
+                <label for="rb5">있음</label>
+                <input type="radio" name="rg3" id="rb5" value="byes">
+                <label for="rb6">없음</label>
+                <input type="radio" name="rg3" id="rb6" value="bno">
+                
+                
                 
         </tr>
 
         <tr>
-            <td>창업희망지역*</td>
-            <td><input type="text"></td>
-            <td>투자가능금액*</td>
-            <td><input type="text">만원</td>
+            <td id="question" >창업희망지역 <span style="color:red;">*</span></td>
+            <td id="question2"><input type="text" required></td>
+            <td id="question" >투자가능금액  <span style="color:red;">*</span></td>
+            <td id="question2"><input style="width:100px;" type="text" required>  만원</td>
         </tr>
 
         <tr>
-            <td>인지경로*</td>
-            <td colspan="3"><label> <input type="checkbox" name="place" value="visit">매장방문</label>
+            <td id="question" >인지경로</td>
+            <td id="question2" colspan="3" ><label> 
+            <input type="checkbox" name="place" value="visit">매장방문</label>
             <label> <input type="checkbox" name="place" value="introduce">지인소개</label>
             <label> <input type="checkbox" name="place" value="homepage">홈페이지</label>
-            <label> <input type="checkbox" name="place" value="ad">신문광고</label>
+            <label> <input type="checkbox" name="place" value="ad">신문광고</label><br>
             <label> <input type="checkbox" name="place" value="coverage">기사보도</label>
             <label> <input type="checkbox" name="place" value="fair">박람회</label>
             <label> <input type="checkbox" name="place" value="else">기타<input type="text"></label>
@@ -105,46 +197,41 @@
         </tr>
 
         <tr>
-            <td>문의내용</td>
-            <td colspan="3"><textarea name="" id="" cols="30" rows="10"></textarea></td>
+            <td id="question">문의내용</td>
+            <td id="question2" colspan="3"><textarea name="" id="" cols="30" rows="10" style="width: 100%;" ></textarea></td>
         </tr>
 
         <tr>
-            <td>자동등록방지</td>
-            <td colspan="3">자동등록방지 숫자를 순서대로 입력하세요</td>
+            <td id="question">자동등록방지</td>
+            <div class="g-recaptcha" data-sitekey="123"></div>
+            <td id="question2" colspan="3">자동등록방지 숫자를 순서대로 입력하세요</td>
+            
         </tr>
-
+ 
     </table>
-    <p>* 필수 표시 항목은 필수입력해야하는 항목입니다.</p>
-
-    <div>
-    <h4>개인정보 수입 및 이용 동의 약관</h4>
-    
-        <p> 1. 홈페이지 회원 가입 및 관리</p>
-        <p>회원 가입의사 확인, 회원제 서비스 제공에 따른 본인 식별․인증, 회원자격 유지․관리, 제한적 본인확인제 시행에 따른 본인확인, 서비스 부정이용 방지, 
-            만 14세 미만 아동의 개인정보 처리시 법정대리인의 동의여부 확인, 각종 고지․통지, 고충처리 등을 목적으로 개인정보를 처리합니다.</p>
-</p>
+    <p style="font-size: 15px;">* 필수 표시 항목은 필수입력해야하는 항목입니다.</p>
 
 
-<p>2. 재화 또는 서비스 제공</p>
-<p></p>물품배송, 서비스 제공, 계약서․청구서 발송, 콘텐츠 제공, 맞춤서비스 제공, 본인인증, 
-연령인증, 요금결제․정산, 채권추심 등을 목적으로 개인정보를 처리합니다.</p>
+    <p style="font-size: 20px; margin-top: 40px;"><strong>개인정보 수입 및 이용 동의 약관</strong></p>
+    <iframe style="border: 1px solid lightgray; margin-top: -7px;" src="./questionIframe.html" frameborder="0" width="100%" height="150"></iframe>
 
-<p>3. 고충처리</p>
 
-<p> 민원인의 신원 확인, 민원사항 확인, 사실조사를 위한 연락․통지, 처리결과 통보 등의 목적으로 개인정보를 처리합니다.
-제2조(개인정보의 처리 및 보유기간) ① 회사는 법령에 따른 개인정보 보유․이용기간 또는 정보주체로부터 개인정보를 수집시에 동의받은 개인정보 보유․
-이용기간 내에서 개인정보를 처리․보유합니다.</p>
+
+
+<p style="text-align: end; font-size: 13px;"><label><input type="checkbox" name="agree" value="agree">개인정보 수집 및 이용 동의 
+    <a style="color: black; text-decoration: none;" href="#">[상세보기]</a>
+</p></label>
+
+
+<div style="text-align: center; margin-top: 15px;">
+    <input id=submit type="submit" value="글쓰기"   >
+    <input id=reset type="reset" value="취소" >
 </div>
 
 
-<label> <input type="checkbox" name="agree" value="agree">개인정보 수집 및 이용 동의</label>
 
-<div>
-    <input type="submit" value="글쓰기">
-    <input type="reset" value="취소">
 </div>
 
-
+</form>
 </body>
 </html>
