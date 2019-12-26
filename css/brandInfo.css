@@ -110,6 +110,7 @@
     width: 100%;
     min-height: 1381px;
     background: url(/img/brand/brand_info_bg.jpg) no-repeat center top;
+    z-index: 1;
 }
 
 .subTitle39 {
@@ -160,10 +161,15 @@
     line-height: 23px;
 }
 .mgL393 {
-    margin-left: 393px !important;
+    margin-left: 500px !important;
 }
-.mgT123 {
-    margin-top: 123px !important;
+.mgT123 { /* sauce */
+    margin-top: 250px !important;
+}
+
+.mgT366{ 
+    margin-top: 350px;
+    margin-left: 50%;
 }
 
 .conText15 {
