@@ -99,7 +99,7 @@
     min-height: 500px;
     height: auto !important;
     height: 500px;
-    font-size: 1em;
+    /* font-size: 1em; */
     zoom: 1;
 }
 
@@ -145,4 +145,6 @@
 .gap {
     padding: 9px 0 11px 0;
     text-align: center;
+    
 }
+

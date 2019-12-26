@@ -86,9 +86,10 @@
 
 #wrapper{
   z-index: 5;
-  margin-left: 200px;
+  margin-left: 150px;
   width: 100%;
   zoom: 1;
+  
 }
 
 #container {
@@ -102,6 +103,7 @@
     height: 500px;
     font-size: 1em;
     zoom: 1;
+    
 }
 
 #ctt {
