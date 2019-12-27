@@ -55,6 +55,63 @@
                 background-position: center;
                 background-size: cover;
             }
+
+            .newShop {
+            border-top: 2px solid #979797;
+            border-bottom: 2px solid #979797;
+            border-left: 2px solid #979797;
+            border-radius: 15px 0 0 15px;
+            width: 160px;
+            height: 32px; 
+            line-height: 28px;
+            float: left;
+            font-size: 15px;
+            margin-left: 90px;
+            margin-top: 5px;
+            text-align: center;
+            }
+
+            .mainNewShop {
+            float: left;
+            width: 367px;
+            height: 231px;
+            border: 1px solid #c5c5c5;
+            border-radius: 8px 8px 37px 37px;
+            background: #fff;
+            margin-left: -1px;
+            }
+
+            .newShopWrap{
+            
+            margin: 0 auto;
+            
+            text-align:center;
+            display:block;
+            cursor:pointer;
+            }
+
+            .mainNewShop h2{
+            font-size:27px;
+            color:#282828;
+            font-weight:normal;
+            text-align:center;
+            margin-top:33px;
+            }
+
+            .msSearchText{
+            color:#666;
+            text-align:center;
+            margin-top:31px;
+            font-size:15px;
+            line-height:20px;
+            }
+
+            .msSearch{
+                width: 206;
+                margin: 0 auto;
+                margin-top: 26px;
+                text-align: center;
+            }
         </style>
 
     </head>
@@ -89,6 +146,34 @@
         </div>
         </div>
         </div>
+
+        <div class="container">
+            
+            
+                <div class="mainNewShop newShopWrap" style="text-align: center;">
+
+                  <h2>신규매장</h2>
+                  <p><img src="imgs/mainicon/icon_newShop.png" style="margin-top: 20px;" alt="신규매장"></p>
+                  <div class="newShop">서울 천왕역점</div>
+                  <img src="imgs/mainicon/btn_more.png" style="margin-right: 83px; margin-top: 5px;">
+                </div>
+                
+              
+                <div class="mainNewShop">
+                  <h2>매장찾기</h2>
+                  <p class="msSearchText">전국 800여개 매장에서 <br> 맛있는 이삭토스트를 즐기세요</p class="msSearchText">
+                  
+                  <div class="msSearch"><input type="text" name="stx" class="inputType1" style="width:154px"><img src="imgs/mainicon/btn_search.png" alt="" style="margin-bottom: 3px;"></div>
+                </div>
+                
+              
+              
+                <div>  <!-- class="mainNewShop" 쓰면 좀 이상하게보임 안쓰면 이미지 모양 그대로 나옴 -->
+                  <div><img src="imgs/mainicon/mainShopStory_01.png" alt="행복스토리"></div>
+                </div>           
+            
+          </div>
+
 
 
     </body>
