@@ -1,11 +1,228 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>토스트 1페이지 | 이삭토스트</title>
+    <title>토스트 1 페이지 | 이삭토스트</title>
+
+    <style>
+
+        *{padding: 0px; margin: 0px;}
+
+        @font-face {
+            font-family: "NanumGothic";
+            src: url("fonts/NanumGothic.ttf"); }
+        
+        @font-face {
+            font-family: "NanumGothicBold";
+            src: url("fonts/NanumGothicBold.ttf");}
+
+        body { font-family: "NanumGothic";}
+
+        .header{
+            width: 100%;
+            height: 108px;
+            background-color:white;
+
+        }
+        .main{
+            width: 100%;
+            height: 285px;
+            background-image: url("images/thumb.jpg");
+        }
+
+        #title{
+            padding-top: 100px;
+            text-align: center;
+            color: white;
+            font-family: "NanumGothicBold";
+            font-size: 3.0em;
+            font-style: NanumGothicBold;
+        }
+       
+        .local{
+            display: block;
+            padding-top: 20px;
+            text-align: center;
+            color: white;
+            font-family: "NanumGothic";
+            font-size: 13px;
+        }
+
+        .local span.l_i{color: #dde4e9}
+
+        .tap_menu{
+            height: 50px;
+            width: 100%;
+            position: relative;
+            background: #363636;
+        }
+
+        .tap_list{
+            list-style: none;
+        }
+
+        .tap_item{
+            position: relative;
+            float: left;
+            width: 33.333%;
+            margin: 0 0 0 -1px;
+        }
+
+        .tap_list a{
+            display:block; 
+            height:50px;
+            line-height:50px;
+            text-align:center;
+            text-decoration:none;
+            border:1px solid #d7d7d7; border-bottom:none; border-top:none;
+            font-size:19px;
+            color: white;
+        }
+
+        .none{
+            width: 100%;
+            height: 80px;
+            display: hidden;
+        }
+
+        .category_title {
+            margin-left: 100px;
+            margin-right: 100px;
+            font-size:30px; font-weight:600;
+            color:#d90317; text-decoration:none;
+            border-bottom:1px solid #d8d8d8;
+            padding-bottom:12px; margin-bottom:35px
+        }
+        
+        .menu_item{
+            display: flex
+    
+        }
+
+        .title_kr{
+            font-family: "NanumGothicBold";
+            text-align: center;
+        }
+
+        .title_eng{
+            text-align: center;
+        }
+
+        .title_kr:hover{
+            font-family: "NanumGothicBold";
+            color: white;
+            background-color: #d90317;
+            border-radius: 15px;
+        }
+
+
+    </style>
 </head>
 <body>
+    <div class="header"></div>
+    <div class="main">
+        <div id="title">토스트</div>
+        <div class="local">
+            <span>HOME </span>
+            <span class="l_i"> > </span>
+            <span> 메뉴 </span>
+            <span class="l_i"> > </span>
+            <span> 토스트</span>
+        </div>
+    </div>
+    <div class="tap_menu">
+        <ul class="tap_list">
+            <li class="tap_item"><a href="menu1-1.html">토스트</a></li>
+            <li class="tap_item"><a href="menu1-2.html">커피&티</a></li>
+            <li class="tap_item"><a href="menu1-3.html">과일주스&음료</a></li>
+        </ul>
+    </div>
     
+    <div class="none"></div>
+    <p class="category_title">Special Toasts</p>
+
+    <div class="menu_item">
+        <div>
+            <p class=><img src="./images/toast/bacon_cheese_salad.png" alt=""></p>
+            <p class="title_kr">베이컨 치즈 샐러드 베이글</p>
+            <p class="title_eng">Bacon cheese salad bagel</p>
+        </div>
+        <div>
+            <p class="toast"><img src="./images/toast/bacon_cheese_bagel.png" alt=""></p>
+            <p class="title_kr">베이컨 치즈 베이글</p>
+            <p class="title_eng">Bacon cheese bagel</p>
+        </div>
+        <div>
+            <p class="toast"><img src="./images/toast/bacon_cheese_muffin.png" alt=""></p>
+            <p class="title_kr">베이컨 치즈 머핀</p>
+            <p class="title_eng">Bacon cheese muffin</p>
+        </div>
+    </div>
+
+    <p class="category_title">White Bread</p>
+    <div class="menu_item">
+        <div>
+            <p class=><img src="./images/toast/bacon_potato_pizza.png" alt=""></p>
+            <p class="title_kr">베이컨포테이토피자</p>
+            <p class="title_eng">Bacon potato pizza toast</p>
+        </div>
+        <div>
+            <p class=><img src="./images/toast/pizza.png" alt=""></p>
+            <p class="title_kr">피자토스트</p>
+            <p class="title_eng">Pizza toast</p>
+        </div>
+        <div>
+            <p class=><img src="./images/toast/potato.png" alt=""></p>
+            <p class="title_kr">감자토스트</p>
+            <p class="title_eng">Potato toast</p>
+        </div>
+        <div>
+            <p class=><img src="./images/toast/double_cheese_pork.png" alt=""></p>
+            <p class="title_kr">더블치즈돈까스</p>
+            <p class="title_eng">Double cheese pork cutlet</p>
+        </div>
+        <div>
+            <p class=><img src="./images/toast/bacon_best.jpg" alt=""></p>
+            <p class="title_kr">베이컨 베스트 토스트</p>
+            <p class="title_eng">Bacon best toast</p>
+        </div>
+        <div>
+            <p class=><img src="./images/toast/ham_cheese.png" alt=""></p>
+            <p class="title_kr">햄 치즈 토스트</p>
+            <p class="title_eng">Ham cheese</p>
+        </div>
+        <div>
+            <p class=><img src="./images/toast/ham_special.png" alt=""></p>
+            <p class="title_kr">햄 스페셜 토스트</p>
+            <p class="title_eng">Ham special toast</p>
+        </div>
+        <div>
+            <p class=><img src="./images/toast/bulgogi_mvp.png" alt=""></p>
+            <p class="title_kr">불고기 MVP 토스트</p>
+            <p class="title_eng">Bulgogi mvp toast</p>
+        </div>
+        <div>
+            <p class=><img src="./images/toast/steak_ham_vip.png" alt=""></p>
+            <p class="title_kr">스테이크 햄 VIP 토스트</p>
+            <p class="title_eng">Steak ham vip toast</p>
+        </div>
+        <div>
+            <p class=><img src="./images/toast/hotchicken.png" alt=""></p>
+            <p class="title_kr">핫치킨 MVP 토스트</p>
+            <p class="title_eng">Hot chicken mvp toast</p>
+        </div>
+        <div>
+            <p class=><img src="./images/toast/bulgalbi_mvp.png" alt=""></p>
+            <p class="title_kr">불갈비 MVP 토스트</p>
+            <p class="title_eng">Bulgalbi mvp toast</p>
+        </div>
+        <div>
+            <p class=><img src="./images/toast/double_cheese_potato.png" alt=""></p>
+            <p class="title_kr">더블 치즈 감자 토스트</p>
+            <p class="title_eng">Double cheese potato toast</p>
+        </div>
+
+    </div>
     
 </body>
 </html>

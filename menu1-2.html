@@ -1,11 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
     <meta charset="UTF-8">
-    <title>커피&차 1페이지 | 이삭토스트</title>
+    <title>커피&차 1 페이지 | 이삭토스트</title>
+
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        @font-face {
+            font-family: "NanumGothic";
+            src: url("fonts/NanumGothic.ttf");
+        }
+
+        @font-face {
+            font-family: "NanumGothicBold";
+            src: url("fonts/NanumGothicBold.ttf");
+        }
+
+        body {
+            font-family: "NanumGothic";
+        }
+
+        .header {
+            width: 100%;
+            height: 108px;
+            background-color: white;
+
+        }
+
+        .main {
+            width: 100%;
+            height: 285px;
+            background-image: url("images/thumb.jpg");
+        }
+
+        #title {
+            padding-top: 100px;
+            text-align: center;
+            color: white;
+            font-family: "NanumGothicBold";
+            font-size: 3.0em;
+            font-style: NanumGothicBold;
+        }
+
+        .local {
+            display: block;
+            padding-top: 20px;
+            text-align: center;
+            color: white;
+            font-family: "NanumGothic";
+            font-size: 13px;
+        }
+
+        .local span.l_i {
+            color: #dde4e9
+        }
+
+        .tap_menu {
+            height: 50px;
+            width: 100%;
+            position: relative;
+            background: #363636;
+        }
+
+        .tap_list{
+            list-style: none;
+        }
+
+        .tap_item{
+            position: relative;
+            float: left;
+            width: 33.333%;
+            margin: 0 0 0 -1px;
+        }
+        
+        .tap_list a{
+            display:block; 
+            height:50px;
+            line-height:50px;
+            text-align:center;
+            text-decoration:none;
+            border:1px solid #d7d7d7; border-bottom:none; border-top:none;
+            font-size:19px;
+            color: white;
+        }
+    </style>
 </head>
+
 <body>
-    
-    
+    <div class="header"></div>
+    <div class="main">
+        <div id="title">커피&티</div>
+        <div class="local">
+            <span>HOME </span>
+            <span class="l_i"> > </span>
+            <span> 메뉴 </span>
+            <span class="l_i"> > </span>
+            <span> 커피&티</span>
+        </div>
+    </div>
+    <div class="tap_menu">
+        <ul class="tap_list">
+            <li class="tap_item"><a href="menu1-1.html">토스트</a></li>
+            <li class="tap_item"><a href="menu1-2.html">커피&티</a></li>
+            <li class="tap_item"><a href="menu1-3.html">과일주스&음료</a></li>
+        </ul>
+    </div>
+
 </body>
+
 </html>
