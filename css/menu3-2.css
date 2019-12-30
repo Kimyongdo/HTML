@@ -1,0 +1,153 @@
+
+.header{
+  display: block;
+  position: relative;
+  z-index: 15;
+  margin: 0;
+  height: 108px;
+}
+
+.image_menu{
+  width: 100%;
+  height: 250px;
+  background-color: black;
+}
+
+#container_title {
+    margin-bottom: 20px;
+    font-size: 47px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.local {
+    display: block;
+    text-align: center;
+}
+
+.local span:first-child {
+    padding: 0 16px 0 0;
+}
+
+.local span {
+    padding: 0 16px 0 8px;
+    color: #fff;
+    font-size: 13px;
+}
+
+.nav_menu{
+  height: 50px;
+  width: 100%;
+  position: relative;
+  background: #363636;
+}
+
+.nav_list{
+    list-style: none;
+    margin: 0 auto;
+}
+
+.nav_item{
+  position: relative;
+    float: left;
+    margin: 0 0 0 -1px;
+    width: 33.333%;
+}
+
+.nav_link{
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid #d7d7d7;
+  border-bottom: none;
+  border-top: none;
+  font-size: 19px;
+  color: #fff;
+}
+
+.nav_link_on{
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid #d7d7d7;
+  border-bottom: none;
+  border-top: none;
+  font-size: 19px;
+  color: #282828;
+  background: #fff;
+}
+
+#wrapper{
+  z-index: 5;
+  margin: 0 auto;
+  width: 100%;
+  zoom: 1;
+}
+
+#container {
+    margin: 0 auto;
+    z-index: 4;
+    position: relative;
+    padding: 0;
+    width: 100%;
+    min-height: 500px;
+    height: auto !important;
+    height: 500px;
+    /* font-size: 1em; */
+    zoom: 1;
+}
+
+#ctt {
+    margin: 0;
+    padding: 50px;
+}
+
+.brand_history_wrap {
+    width: 100%;
+    min-height: 2950px;
+    background: url(/img/brand/brand_history_bg_ch.jpg) no-repeat center top;
+}
+
+.subTitle31 {
+    font-size: 31px !important;
+    font-weight: 600 !important;
+    color: #282828 !important;
+    text-align: center;
+}
+
+.brand_history_wrap dl {
+    text-align: center;
+}
+
+.mgT55 {
+    margin-top: 55px !important;
+}
+
+.brand_history_wrap dl dt {
+    font-size: 27px;
+    font-weight: 600;
+    color: #9e0b0f;
+    padding-bottom: 10px;
+}
+
+.brand_history_wrap dl dd {
+    font-size: 14px;
+    color: #666;
+    line-height: 29.6px;
+}
+
+.gap {
+    padding: 9px 0 11px 0;
+    text-align: center;
+    
+}
+
+p{
+    font-size: 20px;
+}

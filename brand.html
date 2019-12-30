@@ -135,6 +135,11 @@
         .underbody {
             background-color: #F0F0F0;
             padding: 72px 0;
+            position: relative;
+            width: 100%;
+            font-size: 1em;
+            float: left;
+            padding: 0px;
         }
 
         .foundWrap {
@@ -182,6 +187,11 @@
             background: #0072bc !important;
         }
 
+        .foundBox dl{
+            width: 274px;
+            margin: 0 auto;
+        }
+
         .btn_advic {
             display: inline-block;
             background: #444;
@@ -209,8 +219,22 @@
             margin: 29px 0 15px 0;
         }
 
+        .found3{
+            text-align: center;
+            width: 270px;
+            margin: 0 auto;
+            
+            
+        }
+
         .found3_left {
             float: left;
+            margin-right: 4px;
+            
+        }
+
+        .found3_right {
+            float: right;
             margin-right: 4px;
         }
 
@@ -234,9 +258,7 @@
             line-height:37px;
         } 
 
-        .dotteLine{
-            padding-bottom: 17px;
-        }
+        
 
         .foundbox dl{
             width: 274px;
@@ -270,7 +292,21 @@
             -webkit-box-sizing:border-box;
             -moz-box-sizing:border-box;
             box-sizing:border-box;
-} 
+        }
+
+        .mgT26{
+            margin-top: 26px;
+        }
+
+        .found4{
+            padding-top:10px;
+            width:270px;
+            margin:0 auto;
+            color:#666;
+            font-size:12px;
+        } 
+
+        
     </style>
 
 </head>
@@ -386,10 +422,10 @@
             <div class="foundBox mgR13">
                 <ul>
                     <li>
-                        <img src="imgs/found_img2.jpg" alt="창업문의/업종변겅">
+                        <img src="imgs/found_img2.jpg" alt="창업문의/업종변경">
                     </li>
                     <li class="found2_title">창업문의/업종변경</li>
-                    <li class="dotteLine mgT26">
+                    <li class="mgT26">
                         <dl class="clearfix">
                             <dt>국내창업</dt>
                             <dd class="country">1833-9299</dd>
@@ -404,19 +440,27 @@
                         </dl>
                     </li>
                 </ul>
-
-                <div class="foundBox">
+            </div>
+                <div class="foundBox" >
                     <ul>
                         <li><img src="imgs/found_img3.jpg"></li>
                         <li class="found2_title">창업상담문의</li>
                         <li class="found3">
                             <ul class="found3_left">
-                                <li><input type="text" class="inputType2" style="width:180px;" placeholder="이름"></li>
-                                <li><input type="text" class="inputType2" style="width:180px;" placeholder="연락처"></li>
-                                <li><input type="text" class="inputType2" style="width:180px;" placeholder="이메일"></li>
+                                <li><input type="text" class="inputType2" style="width:180px; margin-top: 4px;" placeholder="이름"></li>
+                                <li><input type="text" class="inputType2" style="width:180px; margin-top: 4px;" placeholder="연락처"></li>
+                                <li><input type="text" class="inputType2" style="width:180px; margin-top: 4px;" placeholder="이메일"></li>
                             </ul>
-                            <div><a href="" class="btn_advic">상담신청</a></div>
+                            <div>
+                                <a href="" class="btn_advic">상담신청</a>
+                            </div>
                         </li>
+                         <li class="found4">
+                            <input type="checkbox">
+                            개인정보 활용동의
+                            <button type="button" class="btn btn-secondary btn-sm" style="font-size: 4px;">정책보기</button>
+                            
+                         </li>
                     </ul>
                 </div>
             </div>
