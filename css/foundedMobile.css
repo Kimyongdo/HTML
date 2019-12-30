@@ -1,0 +1,52 @@
+ /* 모바일용 반응형 웹 */
+ @media(max-width: 767px) {
+    body{
+      background-color: whitesmoke;
+    }
+      #twenty{
+        display: block;
+      }
+      #document{
+        font-size: 15px;
+        white-space: nowrap;
+       
+      }
+  #tableExpense{
+    font-size: 13px;
+  }
+  #firsttitle{
+   font-size: 14px;
+  }    
+
+  #con{
+      white-space: nowrap;
+  }
+  div#founded{
+      width: 100px;
+      height: 200px;
+      margin-bottom: 10px;
+     
+  }
+  
+
+  h5 #cardtitle{
+      font-size: 12px;
+      text-align: center;
+  }
+  div #content{
+    margin-top: -10px;
+    color: #666666;
+    font-size: 10.3px;
+  }
+    p#subtitle{
+    color: black;
+    font-size: 10.3px;
+    text-align: center;
+    white-space: normal;
+  }
+  
+  #pointer{
+      display: none;
+  }
+  
+}

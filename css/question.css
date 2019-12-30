@@ -1,0 +1,50 @@
+#question{
+    font-weight: bold;
+    font-size: 13px;
+    background-color: whitesmoke;
+    padding: 13px;
+    padding-left:25px;
+    padding-right: 40px;
+    width: 310px;
+    
+}
+
+#question2{
+    padding-left: 30px;
+    width: 1000px;
+    
+    
+}
+#question2 input{
+    border: 1px solid lightgray;
+}
+
+#submit{
+    background-color: #333333; 
+    border: 1px solid black; 
+    color: white; 
+    padding: 5px;
+    padding-left: 15px; 
+    padding-right: 15px; 
+    font-size: 14px;
+}
+
+#reset{
+background-color: white; 
+border: 1px solid black; 
+color: black; 
+padding: 5px; 
+padding-left: 15px;
+ padding-right: 15px; 
+ font-size: 14px;
+}
+
+#personinfo{
+    text-align: end; 
+    font-size: 13px;
+}
+
+#textarea{
+    width: 98%;
+    margin: 10px;
+}

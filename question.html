@@ -21,58 +21,15 @@
 
     <script>
   
-//처음 시작시 40~49로 시작
+        //처음 시작시 40~49로 시작
         $(document).ready(function(){
              $("select option[value='40~49']").attr("selected", true);
         });
 
     </script>
   
-    
-    
-    
-    
 
-    <style>
-        #question{
-            font-weight: bold;
-            font-size: 13px;
-            background-color: whitesmoke;
-            padding: 13px;
-            padding-left:25px;
-            padding-right: 40px;
-        }
-
-        #question2{
-            padding-left: 30px;
-            
-        }
-        #question2 input{
-            border: 1px solid lightgray;
-        }
-
-        #submit{
-            background-color: #333333; 
-            border: 1px solid black; 
-            color: white; 
-            padding: 5px;
-            padding-left: 15px; 
-            padding-right: 15px; 
-            font-size: 14px;
-        }
-       
-       #reset{
-        background-color: white; 
-        border: 1px solid black; 
-        color: black; 
-        padding: 5px; 
-        padding-left: 15px;
-         padding-right: 15px; 
-         font-size: 14px;
-       }
-        
-    </style>
-
+  <!-- 자동방지여부체크 -->
 <script src='https://www.google.com/recaptcha/api.js'></script> 
 <script type="text/javascript"> /* 서브밋 전에 리캡챠 체크 여부 를 확인합니다. */ 
 function FormSubmit() { if (grecaptcha.getResponse() == ""){ 
@@ -82,17 +39,66 @@ function FormSubmit() { if (grecaptcha.getResponse() == ""){
     </script>
 
 
+<!-- 모바일용 -->
+<link rel="stylesheet" href="./css/questionMobile.css">
+<!-- 웹용 -->
+<link rel="stylesheet" href="./css/question.css">
+
+<script>
+
+    function GoToEnroll() {
+
+        var obEmail = document.getElementById("email");
+
+        if (!obEmail.value) {
+             obEmail.focus();
+
+            return;
+
+        } else {
+
+            if (!CheckEmail(obEmail.value)) {
+
+                alert("이메일 형식이 잘못되었습니다");
+
+                obEmail.focus();
+
+                return;
+
+            }
+
+        }
+
+    }
+
+    function CheckEmail(str) {
+
+        var reg_email = /^([0-9a-zA-Z_\.-]+)@([0-9a-zA-Z_-]+)(\.[0-9a-zA-Z_-]+){1,2}$/;
+
+        if (!reg_email.test(str)) {
+
+            return false;
+
+        } else {
+
+            return true;
+
+        }
+
+    }
+</script>
+
+
 
 </head>
+
 <body>
     <div class="container" style="margin-top: 80px;"> 
-
    <form>
-
-    <table border="1px" style="border: 1px solid #ececec;">
+    <table id=table border="1px" style="border: 1px solid #ececec;">
         <tr>
-            <td id="question" style="border-top:2px solid black;"><strong>성명 </strong><span style="color:red;">*</span></td>
-            <td id="question2" colspan="3" style="border-top:2px solid black; width: 1000px;" ><input type="text" required></td>
+            <td id="question" style="border-top:2px solid black;">성명<span style="color:red;">*</span></td>
+            <td id="question2" colspan="3" style="border-top:2px solid black;" ><input type="text" required></td>
         </tr>
         
         <tr>
@@ -126,14 +132,15 @@ function FormSubmit() { if (grecaptcha.getResponse() == ""){
                 <option value="a">063</option>
                 <option value="a">064</option>
             </select>
-             <input type="text" style="width: 120px;" required>
-             <input type="text" style="width: 120px;" required>
+            <!-- 숫자만 가능한 정규식이용  -->
+             <input type="text" style="width: 120px;" required onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"/>
+             <input type="text" style="width: 120px;" required onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"/>
         </td>
         </tr>
 
         <tr>
             <td id="question" >이메일</td>
-            <td id="question2" colspan="3"><input type="email"></td>
+            <td id="question2" colspan="3"><input type="text" id="email" name="email"></td>
         </tr>
         
         <tr>
@@ -150,7 +157,7 @@ function FormSubmit() { if (grecaptcha.getResponse() == ""){
             <td id="question2">
                 <label for="rb1">남자</label>
                 <input type="radio" name="rg1" id="rb1" value="male">
-                <label for="rb2">여자</label>
+                <label id=female for="rb2">여자</label>
                 <input type="radio" name="rg1" id="rb2" value="female">
             </td>
         </tr>
@@ -180,7 +187,7 @@ function FormSubmit() { if (grecaptcha.getResponse() == ""){
             <td id="question" >창업희망지역 <span style="color:red;">*</span></td>
             <td id="question2"><input type="text" required></td>
             <td id="question" >투자가능금액  <span style="color:red;">*</span></td>
-            <td id="question2"><input style="width:100px;" type="text" required>  만원</td>
+            <td id="question2"><input style="width:100px;" type="text" required onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"/>  만원</td>
         </tr>
 
         <tr>
@@ -198,7 +205,7 @@ function FormSubmit() { if (grecaptcha.getResponse() == ""){
 
         <tr>
             <td id="question">문의내용</td>
-            <td id="question2" colspan="3"><textarea name="" id="" cols="30" rows="10" style="width: 100%;" ></textarea></td>
+            <td id="question2" colspan="3"><textarea id=textarea name="" id="" cols="30" rows="10" ></textarea></td>
         </tr>
 
         <tr>
@@ -218,13 +225,13 @@ function FormSubmit() { if (grecaptcha.getResponse() == ""){
 
 
 
-<p style="text-align: end; font-size: 13px;"><label><input type="checkbox" name="agree" value="agree">개인정보 수집 및 이용 동의 
+<p id=personinfo ><label><input type="checkbox" name="agree" value="agree">개인정보 수집 및 이용 동의 
     <a style="color: black; text-decoration: none;" href="#">[상세보기]</a>
-</p></label>
+</label></p>
 
 
 <div style="text-align: center; margin-top: 15px;">
-    <input id=submit type="submit" value="글쓰기"   >
+    <input id=submit type="submit" value="글쓰기" onclick="GoToEnroll()">
     <input id=reset type="reset" value="취소" >
 </div>
 

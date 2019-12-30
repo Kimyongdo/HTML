@@ -16,6 +16,8 @@
     <!-- 부트스트랩을 써야함. -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
+
+    <link rel="stylesheet" href="./css/interview.css">
     <style>
         img{
             width: 285px;
@@ -27,7 +29,30 @@
             text-align: center;
              margin-top: 5px;
        }
+       #name{
+           margin-top: 40px;
+       }
+
+       #search{
+        font-size: 13px; 
+        padding: 4px; 
+        padding-bottom: 6px;
+       }
+
+       #text{
+            vertical-align: middle; 
+            width: 150px; 
+            height: 30px;
+       }
+
+      
     </style>
+
+<link rel="stylesheet" href="./animation/animate.css">
+<script type="text/javascript" src="./animation/wow.min.js"></script>
+<script> new WOW().init(); </script>
+
+
 
 </head>
 
@@ -36,13 +61,15 @@
 
     
 
-
+        <div class="wow fadeInUp">
         <div>
             <p style="font-size: 28px;">이삭 가족들과 함께하는</p>
             <p style="font-size: 40px; padding-left: 5px; margin-top: -15px;" > <strong>창업 성공 행복스토리~</strong></p>
         </div>
+        </div>
 
-        <div id=name class="row" style="margin-top: 40px;" >
+        <div class="wow fadeInUp" style="animation-delay: 0.3s;">
+        <div id=name class="row">
             <div>
                 <a href="#"> <img src="./images/interview/chungju.PNG" alt="" style="display: block; padding-right: 30px;"></a>
                 <a href="#"> <p><strong>청주서원대점</strong></p></a>
@@ -50,26 +77,27 @@
             </div>
 
             <div class=>
-                <img src="./images/interview/jeonju.PNG" alt="" style="display: block; padding-right: 30px;">
+                <a href="#"><img src="./images/interview/jeonju.PNG" alt="" style="display: block; padding-right: 30px;"></a>
                 <a href="#"> <p ><strong>전주평화점</strong></p></a>
             </div>
 
             <div class=>
-                <img src="./images/interview/sindeabang.PNG" alt="" style="display: block; padding-right: 30px;">
+                <a href="#"><img src="./images/interview/sindeabang.PNG" alt="" style="display: block; padding-right: 30px;"></a>
                 <a href="#">  <p ><strong>신대방삼거리역점</strong></p></a>
             </div>
 
 
             <div class=>
-                <img src="./images/interview/songpa.PNG" alt="" style="display: block; padding-right: 30px;">
+                <a href="#"><img src="./images/interview/songpa.PNG" alt="" style="display: block; padding-right: 30px;"></a>
                 <a href="#">  <p ><strong>송파풍납점</strong></p></a>
             </div>
+        </div>
         </div>
 
 
         <div style="text-align: center; margin-top: 60px; " >
             
-        <select name="search" style="font-size: 13px; padding: 4px; padding-bottom: 6px;" >
+        <select id=search name="search"  >
             <option value="a">제목</option>
             <option value="b">내용</option>
             <option value="c">제목+내용</option>
@@ -79,7 +107,7 @@
             <option value="g">글쓴이(코)</option>
         </select> 
 
-        <input style="vertical-align: middle; width: 150px; height: 30px;" type="text">
+        <input id=text type="text">
         <button style="font-size: 12px;" type="button" class="btn btn-dark">검색</button>
     </div>
 

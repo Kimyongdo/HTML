@@ -1,0 +1,16 @@
+ /* 모바일용 반응형 웹 */
+ @media(max-width: 767px) {
+    
+    table #question{
+        padding: 10px;
+        margin: 0px;
+        
+    }
+    table tr td{
+        margin: 0px;
+        padding: 0px;
+    }
+
+ 
+  
+}
