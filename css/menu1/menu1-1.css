@@ -470,6 +470,7 @@ label, #toggle{
     #ftWeb{
         display: block;
     }
+<<<<<<< HEAD
 }
 
 
@@ -599,3 +600,6 @@ body { font-family: "NanumGothic";}
     background-color: #d90317;
     border-radius: 15px;
 }
+=======
+}
+>>>>>>> origin/master

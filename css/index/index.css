@@ -132,7 +132,7 @@ input[id="menuicon"] + label span:nth-child(3){
     position:absolute; 
     z-index:15; 
     top: 108px;
-    width: 100%; 
+    width: 100px; 
     height:200px; 
     background-color:#ffffff; 
     opacity: 0.9;
@@ -171,115 +171,14 @@ input[id="menuicon"] + label span:nth-child(3){
     color:#cb0215 !important
 }
 
-/* 네비영역 */
-#mainMenuImg{
-    position: relative;
-    width: 100% !important;
-    height: 285px;
-}
-#menuTitle{
-    margin-bottom: 20px;
-    font-size: 47px;
-    font-weight: 600;
-    color: #fff;
-    text-align: center;
-    padding-top: 100px;
-}
-.local {
-    display: block;
-    text-align: center;
-}
-#localList{
-    color: #fff;
-}
-#lcoalArrow{
-    color: gray;
-    font-size: 1.2em;
-}
-.local span:first-child {
-    padding: 0 0 0 2;
-}
-.local span {
-    padding: 0 0 0 2;
-    color: #fff;
-    font-size: 13px;
-} 
-.nav_menu{
-    width: 100%;
-    position: relative;
-    background: #363636;
-}
-.nav_ul{
-    width:1100px;
-    margin:0 auto; 
-    list-style: none; 
-}
-.nav_ul:after{
-    content:" "; 
-    display:block; 
-    clear:both; 
-    height:0; 
-    visibility:hidden;
-}
-.nav_ul li{
-    position:relative; 
-    float:left; 
-    margin:0 0 0 -1px;
-}
-.nav_ul li a{
-    display:block; 
-    height:50px; 
-    line-height:50px; 
-    text-align:center; 
-    text-decoration:none; 
-    border:1px solid #d7d7d7; 
-    border-bottom:none; 
-    border-top:none; 
-    font-size:19px; 
-    color:#fff
-} 
-.nav_on{
-    color:#282828 !important;
-    background:#fff; 
-    height:50px; 
-    font-weight:600;
-}
-.nav_ul li a:hover{
-    height:50px; 
-    color:#282828; 
-    background:#fff; 
-    border:1px solid #d7d7d7; 
-    border-bottom:none; 
-    border-top:none;
-}
-.nav_menu > ul >li.nav_on a{
-    height:50px; 
-    color:#282828; 
-    background:#fff;
-}
-/* .nav_ul li{
-    width:50%;
-} */
-.nav_ul li{
-    width:33.333%;
-}
-/*
-.nav_ul li{
-    width:25%;
-}
-.nav_ul li{
-    width:20%;
-}
-.nav_ul li{
-    width:16.66%;
-} */
-label, #toggle{
-    display: none;
-}
-
 /* footer */
 #ft{
     margin-top: 70px;
+}
+#ftSns{
+    display: block;
+    margin-top: 50px;
+    text-align: center;
 }
 #company{
     width:1010px;
@@ -470,132 +369,4 @@ label, #toggle{
     #ftWeb{
         display: block;
     }
-<<<<<<< HEAD
 }
-
-/* contents영역 */
-*{padding: 0px; margin: 0px;}
-
-@font-face {
-    font-family: "NanumGothic";
-    src: url("fonts/NanumGothic.ttf"); }
-        
-@font-face {
-    font-family: "NanumGothicBold";
-    src: url("fonts/NanumGothicBold.ttf");}
-
-body { font-family: "NanumGothic";}
-
-.header{
-    width: 100%;
-    height: 108px;
-    background-color:white;
-
-}
-.main{
-    width: 100%;
-    height: 285px;
-    background-image: url("images/thumb.jpg");
-}
-
-#title{
-    padding-top: 100px;
-    text-align: center;
-    color: white;
-    font-family: "NanumGothicBold";
-    font-size: 3.0em;
-    font-style: NanumGothicBold;
-}
-       
-.local{
-    display: block;
-    padding-top: 20px;
-    text-align: center;
-    color: white;
-    font-family: "NanumGothic";
-    font-size: 13px;
-}
-.local span.l_i{color: #dde4e9}
-
-.tap_menu{
-    height: 50px;
-    width: 100%;
-    position: relative;
-    background: #363636;
-}
-
-.tap_list{
-    list-style: none;
-}
-
-.tap_item{
-    position: relative;
-    float: left;
-    width: 33.333%;
-    margin: 0 0 0 -1px;
-}
-
-.tap_list a{
-    display:block; 
-    height:50px;
-    line-height:50px;
-    text-align:center;
-    text-decoration:none;
-    border:1px solid #d7d7d7; border-bottom:none; border-top:none;
-    font-size:19px;
-    color: white;
-}
-
-
-/* contents */
-
-
-#category_title {
-    margin-top: 80px;
-    font-size:30px; font-weight: bold;
-    color:#d90317; text-decoration:none;
-    border-bottom:1px solid #d8d8d8;
-    padding-bottom:12px; margin-bottom:35px
-}
-
-    
-    
-#item_li{
-    list-style: none;
-
-}
-
-
-.container{
-    font-family: "NanumGothic";
-
-}
-
-
-.title_kr{
-    width: 230px;
-    padding: 2px;
-    margin-top: 10px;
-    font-size: 20px;
-    font-family: "NanumGothicBold";
-    text-align: center;
-}
-
-.title_eng{
-    width: 230px;
-    padding: 2px;
-    margin-top: 2px;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.title_kr:hover{
-    width: 230px;
-    font-family: "NanumGothicBold";
-    color: white;
-    background-color: #d90317;
-    border-radius: 15px;
-}
-=======
-}
->>>>>>> origin/master

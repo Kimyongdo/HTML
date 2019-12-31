@@ -259,17 +259,19 @@ input[id="menuicon"] + label span:nth-child(3){
 }
 /* .nav_ul li{
     width:50%;
-} */
+} 
 .nav_ul li{
     width:33.333%;
 }
-/*
+
 .nav_ul li{
     width:25%;
 }
+*/
 .nav_ul li{
     width:20%;
 }
+/*
 .nav_ul li{
     width:16.66%;
 } */
@@ -470,132 +472,43 @@ label, #toggle{
     #ftWeb{
         display: block;
     }
-<<<<<<< HEAD
-}
-
-/* contents영역 */
-*{padding: 0px; margin: 0px;}
-
-@font-face {
-    font-family: "NanumGothic";
-    src: url("fonts/NanumGothic.ttf"); }
-        
-@font-face {
-    font-family: "NanumGothicBold";
-    src: url("fonts/NanumGothicBold.ttf");}
-
-body { font-family: "NanumGothic";}
-
-.header{
-    width: 100%;
-    height: 108px;
-    background-color:white;
-
-}
-.main{
-    width: 100%;
-    height: 285px;
-    background-image: url("images/thumb.jpg");
-}
-
-#title{
-    padding-top: 100px;
-    text-align: center;
-    color: white;
-    font-family: "NanumGothicBold";
-    font-size: 3.0em;
-    font-style: NanumGothicBold;
-}
-       
-.local{
-    display: block;
-    padding-top: 20px;
-    text-align: center;
-    color: white;
-    font-family: "NanumGothic";
-    font-size: 13px;
-}
-.local span.l_i{color: #dde4e9}
-
-.tap_menu{
-    height: 50px;
-    width: 100%;
-    position: relative;
-    background: #363636;
-}
-
-.tap_list{
-    list-style: none;
-}
-
-.tap_item{
-    position: relative;
-    float: left;
-    width: 33.333%;
-    margin: 0 0 0 -1px;
-}
-
-.tap_list a{
-    display:block; 
-    height:50px;
-    line-height:50px;
-    text-align:center;
-    text-decoration:none;
-    border:1px solid #d7d7d7; border-bottom:none; border-top:none;
-    font-size:19px;
-    color: white;
 }
 
 
 /* contents */
+div#founded{
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 200px;
+} */
 
-
-#category_title {
-    margin-top: 80px;
-    font-size:30px; font-weight: bold;
-    color:#d90317; text-decoration:none;
-    border-bottom:1px solid #d8d8d8;
-    padding-bottom:12px; margin-bottom:35px
+h5#cardtitle{
+    color: white;   
+    font-size: 15px; padding: 10px; 
+    background-color: #222222;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
-
-    
-    
-#item_li{
-    list-style: none;
-
+img#cardimg{
+    margin-top: 5px;
+    width: 5rem;
+    margin-bottom: -10px;
 }
-
-
-.container{
-    font-family: "NanumGothic";
-
+p#content{
+    padding: 0px;
+    margin: 0px;
+    font-size: 18px;
 }
-
-
-.title_kr{
-    width: 230px;
-    padding: 2px;
-    margin-top: 10px;
-    font-size: 20px;
-    font-family: "NanumGothicBold";
-    text-align: center;
+p#subtitle{
+    font-size: 12px;
+    /* 자동줄바꿈 취소 */
+    white-space: nowrap;
+    color: #666666;   
 }
-
-.title_eng{
-    width: 230px;
-    padding: 2px;
-    margin-top: 2px;
-    margin-bottom: 10px;
-    text-align: center;
+#content{
+    color: #666666;
 }
-
-.title_kr:hover{
-    width: 230px;
-    font-family: "NanumGothicBold";
-    color: white;
-    background-color: #d90317;
-    border-radius: 15px;
+#doc{
+    padding-left: 15px; 
+    color: #666666;
 }
-=======
-}
->>>>>>> origin/master
