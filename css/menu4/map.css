@@ -1,0 +1,140 @@
+/* 지도-위치 */
+#geo{
+    width: 100%;
+    height: 400px;
+  }
+
+/* 전국구지도 */
+  .dg-map-area{
+float: left;
+width: 100%;
+border:1px solid #dcdcdc;
+margin:30px 0 12px;
+}
+.dg-map{
+text-align: center;
+background: #f7f5f2;
+}
+.dg-map svg{
+margin:65px 0 0;
+}
+.dg-map-in{
+width: 50%;
+float: left;
+height: 540px;
+}
+
+
+/* */
+
+#map{
+    border: 1px solid #A2A2A2;
+     border-right: none;
+}
+/* 전국지도 */
+#geoborder{
+    border-top: 1px solid  #A2A2A2;
+    border-right: 1px solid #A2A2A2;
+     padding-right: 30px;
+}
+
+/* 매장찾기 테이블 */     
+#addressPlacediv{
+    padding-left: 570px; 
+    margin-top: 30px;
+}
+
+#addressPlacediv input{
+    padding-left: 30px; 
+    padding-right: 30px;
+}
+
+#addressPlacediv button{
+    font-size: 13px;
+    vertical-align: bottom;
+}
+
+#placeName{
+    padding: 4px; 
+    padding-left: 25px; 
+    padding-right: 25px; 
+     font-size: 14px;
+}
+
+  tr td{
+font-size: 15px;
+color: #666666;
+padding: 5px; 
+}
+
+
+
+/* 시도별 매장안내 */
+#infodiv{
+    padding-left: 570px;
+    border-right: 1px solid #A2A2A2;
+    border-bottom: 1px solid #A2A2A2;
+    padding-right: 1px;
+    
+}
+
+#infop{
+    color: #666666; 
+    margin-top: 20px;
+    font-weight: bold;
+}
+#infop>div{
+    padding-left: 10px;
+}
+
+
+#placeinfo{
+    width: 100%; 
+    text-align: center;
+}
+
+#infodiv td{
+    margin: 0px;
+     padding: 0px;
+     ;
+}
+#infodiv td button{
+    width: 100%;
+}
+
+
+
+/* 마지막 테이블 */
+
+#table{
+    border-top: 2px solid black; 
+    text-align: center;
+}
+
+thead{
+    background-color:whitesmoke;
+}
+
+#table tr{
+  font-size: 15px;
+}
+
+#table td{
+  font-size:  15px;
+}
+
+#table td button{
+  font-size:  12px;
+} 
+
+
+
+#footerbtn{
+    text-align: center; 
+    font-size: 10px;
+}
+
+#footerbtn button{
+font-size: 12px;
+
+  }

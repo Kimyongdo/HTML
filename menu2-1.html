@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=1400,user-scalable=yes,target-densitydpi=medium-dpi">
+    <meta http-equiv="imagetoolbar" content="no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    
+    <!-- 부트스트랩 라이브러리 추가-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- css 추가 -->
+    <link rel="stylesheet" href="./css/menu2/menu2-1.css">
+      <!-- 모바일용 -->
+      <link rel="stylesheet" href="./css/menu2/foundedMobile.css">
+      <!-- 웹용 -->
+      <link rel="stylesheet" href="./css/menu2/founded.css">
+
+
+    <!-- js추가 -->
+    <script src="./js/menu2/menu2-1.js"></script>
+
+    <!-- 애니메이션 효과 -->
+    <link rel="stylesheet" href="./animation/animate.css">
+    <script type="text/javascript" src="./animation/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+
+</head>
+<body>
+    <!-- header영역 -->
+    <header class="hd">
+        <div id="header">
+            <div id="Logo">
+                <a href="./index.html"><img src="./img/defaltTemplate/logo_header.png" alt=""></a>
+            </div>
+            <div id="sns">
+                <a href="https://www.facebook.com/isaactoast.online"><img src="./img/defaltTemplate/sns_f.png" alt=""></a>
+        <a href="https://www.instagram.com/explore/tags/%EC%9D%B4%EC%82%AD%ED%86%A0%EC%8A%A4%ED%8A%B8/"><img src="./img/defaltTemplate/sns_i.png" alt=""></a>
+        <a href="https://blog.naver.com/isaac-toast"><img src="./img/defaltTemplate/sns_b.png" alt=""></a>
+            </div>
+            <span id="menubox">
+                <input type="checkbox" id="menuicon">
+                <label for="menuicon" onclick>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </span>
+        </div>
+        <div id="mainMenu">
+            <div id="menu">
+                <div id="subMenu"></div>
+                <nav id="nav" class="navbar">
+                    <ul id="main">
+                        <li id="mainList">
+                            <a href="./menu1-1.html" id="topList">메뉴</a>
+                            <ul id="sub">
+                                <li><a href="./menu1-1.html" id="subList">토스트</a></li>
+                                <li><a href="./menu1-2.html" id="subList">커피&amp;티</a></li>
+                                <li><a href="./menu1-3.html" id="subList">과일주스&amp;음료</a></li>
+                            </ul>
+                        </li>
+                        <li id="mainList">
+                            <a href="./menu2-1.html" id="topList">창업정보</a>
+                            <ul id="sub">
+                                <li><a href="./menu2-1.html" id="subList">창업안내</a></li>
+                                <li><a href="./menu2-2.html" id="subList">교육 프로그램</a></li>
+                                <li><a href="./menu2-3.html" id="subList">인테리어</a></li>
+                                <li><a href="./menu2-4.html" id="subList">점포인터뷰</a></li>
+                                <li><a href="./menu2-5.html" id="subList">가맹문의</a></li>
+                            </ul>
+                        </li>
+                        <li id="mainList">
+                            <a href="./menu3-1.html" id="topList">브랜드</a>
+                            <ul id="sub">
+                                <li><a href="./menu3-1.html" id="subList">브랜드 소개</a></li>
+                                <li><a href="./menu3-2.html" id="subList">연혁</a></li>
+                                <li><a href="./menu3-3.html" id="subList">CEO 인사말</a></li>
+                            </ul>
+                        </li>
+                        <li id="mainList">
+                            <a href="./menu4-1.html" id="topList">매장찾기</a>
+                            <ul id="sub">
+                                <li><a href="./menu4-1.html" id="subList">국내</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+    </div>
+</header>
+
+    <!-- nav영역 -->
+        <div>
+            <!-- 메인 메뉴 이미지 -->
+            <div id="mainMenuImg" style="background-image: url(./img/defaltTemplate/sVisual_02.jpg)">
+                <div id="menuTitle">창업안내</div>
+                <div class="local">
+                  <span id="localList">HOME</span>
+                  <span id="lcoalArrow"> > </span>
+                  <span id="localList">창업정보</span id="localList">
+                  <span id="lcoalArrow"> > </span id="lcoalArrow">
+                  <span id="localList">창업안내</span id="localList">
+                </div>
+            </div>
+        <!-- nav -->
+                <div class="nav_menu">
+                    <label for="toggle" onclick></label>
+                    <input type="checkbox" id="toggle">
+                    <ul class="nav_ul">
+                        <li><a href="./menu2-1.html" class="nav_on">창업안내</a></li>
+                        <li><a href="./menu2-2.html" class="nav_link">교육프로그램</a></li>
+                        <li><a href="./menu2-3.html" class="nav_link">인테리어</a></li>
+                        <li><a href="./menu2-4.html" class="nav_link">점포인터뷰</a></li>
+                        <li><a href="./menu2-5.html" class="nav_link">가맹문의</a></li>
+                    </ul>
+                </div>
+        </div>
+            
+    
+        <div class="container" style="margin-top: 80px;">
+            <!-- 애니메이션 -->
+            <div class="wow fadeInUp">
+                <h2 id="procedure">
+                    <strong>가맹 절차</strong>
+                </h2>
+                <div class="jumbotron text-center">
+                    <div id="jumbo" class="row">
+
+                        <div id="founded" class="card">
+                            <center>
+                                <h5 id="cardtitle" class="card-title">STEP 1</h5>
+                                <img
+                                    id="cardimg"
+                                    src="http://www.isaac-toast.co.kr/img/found/infoIcon1.png"
+                                    class="card-img-top"
+                                    style="margin-top: 15px;">
+                                <div class="card-body">
+                                    <p id="content" class="card-text">
+                                        <strong>가맹점 문의</strong>
+                                    </p>
+                                    <p id="subtitle">전화 or 홈페이지 문의</p>
+                                </div>
+                            </center>
+                        </div>
+
+                        <p style="padding: 10px; margin-top: 85px;">
+                           
+                        </p>
+
+                        <div id="founded" class="card">
+                            <center>
+                                <h5 id="cardtitle" class="card-title">STEP 2</h5>
+                                <img
+                                    id="cardimg"
+                                    src="http://www.isaac-toast.co.kr/img/found/infoIcon2.png"
+                                    class="card-img-top">
+                                <div class="card-body">
+                                    <p id="content" class="card-text">
+                                        <strong>입지/상권조사</strong>
+                                    </p>
+                                    <p id="subtitle">개설지역 상권조사 점포선정</p>
+                                </div>
+                            </center>
+                        </div>
+
+                        <p style="padding: 10px; margin-top: 85px;">
+                          
+                        </p>
+
+                        <div id="founded" class="card">
+                            <center>
+                                <h5 id="cardtitle" class="card-title">STEP 3</h5>
+                                <img
+                                    id="cardimg"
+                                    src="http://www.isaac-toast.co.kr/img/found/infoIcon3.png"
+                                    class="card-img-top"
+                                    style="width: 4.5rem;">
+                                <div class="card-body">
+                                    <p id="content" class="card-text">
+                                        <strong>가맹점개설결정</strong>
+                                    </p>
+                                    <p id="subtitle">가맹점 개설승인 계약서 제공</p>
+                                </div>
+                            </center>
+                        </div>
+
+                        <p style="padding: 10px; margin-top: 85px;">
+                           
+                        </p>
+
+                        <div id="founded" class="card">
+                            <center>
+                                <h5 id="cardtitle" class="card-title">STEP 4</h5>
+                                <img
+                                    id="cardimg"
+                                    src="http://www.isaac-toast.co.kr/img/found/infoIcon4.png"
+                                    class="card-img-top"
+                                    style="width: 4.9rem;">
+                                <div class="card-body">
+                                    <p id="content" class="card-text">
+                                        <strong>가맹점계약</strong>
+                                    </p>
+                                    <p id="subtitle">가맹점주 교육 직원구인 및 교육</p>
+                                </div>
+                            </center>
+                        </div>
+                        <!-- -->
+                    </div>
+                    <!-- -->
+
+                    <p></p>
+
+                    <div id=jumbo class="row" style="margin-left: 60px;">
+
+                        <div id="founded" class="card" style="float: none;">
+                            <center>
+                                <h5 id="cardtitle" class="card-title">STEP 5</h5>
+                                <img
+                                    id="cardimg"
+                                    src="http://www.isaac-toast.co.kr/img/found/infoIcon5.png"
+                                    class="card-img-top"
+                                    style="width: 4.5rem;">
+                                <div class="card-body">
+                                    <p id="content" class="card-text">
+                                        <strong>인테리어계약</strong>
+                                    </p>
+                                    <p id="subtitle">도면협의 및 공사일정 확인</p>
+
+                                </div>
+                            </center>
+                        </div>
+
+                        <p style="padding: 10px; margin-top: 85px;">
+                            <img
+                                id="pointer"
+                                src="./images/arrow/arrow-point-to-right.png"
+                                alt=""
+                                width="20px"
+                                height="20px">
+                        </p>
+
+                        <div id="founded" class="card">
+                            <center>
+                                <h5 id="cardtitle" class="card-title">STEP 6</h5>
+                                <img
+                                    id="cardimg"
+                                    src="http://www.isaac-toast.co.kr/img/found/infoIcon6.png"
+                                    class="card-img-top"
+                                    style="width: 4.5rem; margin-top: 25px;">
+                                <div class="card-body">
+                                    <p id="content" class="card-text">
+                                        <strong>매장시공 및 완료</strong>
+                                    </p>
+                                    <p id="subtitle">인테리어 시공</p>
+
+                                </div>
+                            </center>
+                        </div>
+
+                        <p style="padding: 10px; margin-top: 85px;">
+                            <img
+                                id="pointer"
+                                src="./images/arrow/arrow-point-to-right.png"
+                                alt=""
+                                width="20px"
+                                height="20px">
+                        </p>
+
+                        <div id="founded" class="card">
+                            <center>
+                                <h5 id="cardtitle" class="card-title">STEP 7</h5>
+                                <img
+                                    id="cardimg"
+                                    src="http://www.isaac-toast.co.kr/img/found/infoIcon7.png"
+                                    class="card-img-top"
+                                    style="width: 4.5rem;">
+                                <div class="card-body">
+                                    <p id="content" class="card-text">
+                                        <strong>매장 영업준비</strong>
+                                    </p>
+                                    <p id="subtitle">매장 영업준비 및 교육</p>
+
+                                </div>
+                            </center>
+                        </div>
+
+                        <p style="padding: 10px; margin-top: 85px;">
+                            <img
+                                id="pointer"
+                                src="./images/arrow/arrow-point-to-right.png"
+                                alt=""
+                                width="20px"
+                                height="20px">
+                        </p>
+
+                        <div id="founded" class="card">
+                            <center>
+                                <h5 id="cardtitle" class="card-title">STEP8</h5>
+                                <img
+                                    id="cardimg"
+                                    src="http://www.isaac-toast.co.kr/img/found/infoIcon8.png"
+                                    class="card-img-top"
+                                    style="width: 4.5rem;">
+                                <div class="card-body">
+                                    <p id="content" class="card-text">
+                                        <strong>그랜드 오픈</strong>
+                                    </p>
+                                    <p id="subtitle">매장 오픈 및 관리</p>
+
+                                </div>
+                            </center>
+                        </div>
+
+                    </div>
+                    <!-- -->
+                </div>
+                <p id="consume">*가맹점 의뢰로부터 개점까지 약 30일 소요됩니다.</p>
+                <!-- 애니메이션 효과 -->
+            </div>
+
+            <!-- 가맹비용 내용 시작 -->
+            <div class="wow fadeInUp" style="animation-delay: 0.3s;">
+
+                <h2 id="expense">
+                    <strong>가맹 비용</strong>
+                </h2>
+                <div>
+
+                    <table id="tableExpense" border="1px">
+
+                        <tr >
+                            <td id="firsttitle" colspan="2">최초 가맹비</td>
+                            <td id=secondTd style="text-align: center; color: red;">
+                                <strong>없음</strong>
+                            </td>
+                            <td id="thridtitle" style="width: 70%;">최초오픈, 양도/양수, 재계약 가맹비 발생 일체 없음</td>
+                        </tr>
+                    </div>
+                    <tr>
+                        <td id="firsttitle" colspan="2">교육비</td>
+                        <td id="secondtitle">1人당 300만원</td>
+                        <td id="thridtitle">메뉴레시피 및 점포운영 Know-How 제공, 본사 교육장5일/직영현장 5일(총2주)</td>
+                    </tr>
+
+                    <tr id=thridTr>
+                        <td id="firsttitle" rowspan="2">인테리어비</td>
+                        <td id="firsttitle">내/외장공사</td>
+                        <td id="secondtitle">2,310만원</td>
+                        <td id="thridtitle">벽체공사, 천정공사, 바닥공사, 전기공사, 설비공사</td>
+                    </tr>
+
+                    <tr>
+                        <td id="firsttitle">사인<span id="con">(간판)공사<span></td>
+                                <td style="text-align: center;">
+                                    <strong>410만원</strong>
+                                </td>
+                                <td id="thridtitle">간판(전면LED잔넬, 돌출원형1조, 내/외부사인</td>
+                            </tr>
+
+                            <tr>
+                                <td id="firsttitle" colspan="2">
+                                    <strong>기기장비비</strong>
+                                </td>
+                                <td style="text-align: center;">
+                                    <strong>1,790만원</strong>
+                                </td>
+                                <td id="thridtitle">빵기계, 핫플레이트, 커피머신, 온수기, 믹서기, 제비익, 냉장/냉동고(업소용)<br>
+                                    테이블 냉장고, 토핑냉장고, 양배추 절단기, 브리타 필터, 수전(파우엣), 포스기기 등등
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td id="firsttitle" colspan="2" style="background-color: gray; color: white;">
+                                    <strong>총계</strong>
+                                </td>
+                                <td style="text-align: center; background-color: gray; color: white;">
+                                    <strong>4,810만원</strong>
+                                </td>
+                                <td style="background-color: gray; color: white; padding-left: 10px;">부가세 별도 (점포임대차비용 제외)
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- 가맹비용 마지막 -->
+                    <p id="loyalty">* 월 로열티 110,000원(vat포함) 발생</p t>
+                    <p id="addcon">
+                        <strong>별도/추가공사</strong>
+                    </p>
+                    <p id="otheradd2">철거(천정,바닥,벽체)공사, 냉/난방(기기)공사, 전기증설공사, 외부테라스공사, 추가간판설치, 소방/정화공사,
+                        음향기기시설, 어닝, 외장 파사드공사</p>
+
+                    <!-- 개점시 필요서류 -->
+                    <!-- 애니메이션 효과 -->
+                </div>
+                <!-- -->
+
+                <div class="wow fadeInUp">
+                    <p id="docrequired">개점시 필요서류</p>
+                    <div>
+                        <p >
+                            <strong style="font-size: 18px;">1. 영업허가</strong>
+                            (구청 미원 서류접수, 위생과 발급)</p>
+                        <div>
+                            <table>
+                                <tr>
+                                    <td id="document" ">구비서류</td>
+                                    <td id="doc">
+                                        ① 점포건축물관리대장 1부(구청민원실)</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td id="doc">
+                                        ② 점포도시계획획인원 1부(구청민원실)</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td id="doc">
+                                        ③ 영업허가신청서 1부 (구청미원실)</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td id="doc">
+                                        ④ 보건증 (보건소:주민등록증/소요시간 약 5일)</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td id="doc">
+                                        ⑤ 교육필증 1부(각 요식업조합 - 위생과 문의)</td>
+                                </tr>
+                            </table>
+
+                            <p style="margin-top: 20px;">
+                                <strong style="font-size: 19px; ">2. 사업자등록증
+                                </strong>
+                                <span id="twenty">(개업 후 20일 이내 관할 세무서 민원봉사실로 신청)</span>
+                            </p>
+
+                            <table>
+                                <tr>
+                                    <td id="document">구비서류</td>
+                                    <td id="doc">
+                                        ① 점포건축물관리대장 1부(구청민원실)</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td id="doc">
+                                        ② 주민등록본 2부 영업허가증 사본 1부</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td id="doc">
+                                        ③ 전세임대차계약서 사본 1부 동업계약서(공동사업자인 경우)</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <p id="copy">
+                            <strong>3. 상가임대차 계약사 사본</strong>
+                        </p>
+                        <p id="copy">
+                            <strong>4. 보건증, 신분증, 주민등록등본 1부</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+    <!-- footer 영역 -->
+    <div id="ft">
+        <hr>
+            <div id="company">
+                <div class="logo"><img src="./img/defaltTemplate/logo_footer.png" alt=""></div>
+                <div class="ftMenu">
+                    <a href="./menu3-1.html">회사소개</a>
+                    <a href="">제휴/제안</a>
+                    <a href="">고객의 소리</a>
+                    <a href="">이용약관</a>
+                    <a href="">개인정보처리방침</a>
+                    <a href="">이메일무단수집거부</a>
+                    <a href="">점주공간</a>
+                </div>
+            </div>
+        <hr>
+            <div id="copyright">
+                <ul class="copyUl">
+                    <li><span class="ftli">창업문의 : </span class="ftli2">1833-9299</li>
+                    <li><span class="ftli" class="ftli">서울사업본부 : </span class="ftli2">서울시 송파구 중대로 97 효원빌딩 6층, 13층 (TEL:02-6959-1086)</li>
+                    <li><span class="ftli" class="ftli">대전사무실 : </span class="ftli2">대전광역시 중구 산서로 53번길 11 (TEL:042-274-3060)</li>
+                    <li><span class="ftli" class="ftli">대구사무실 : </span class="ftli2">대구광역시 수성구 동대구로 376 범어숲화성파크드림S 상가 225호</li>
+                    <li class="ftli">Copyright © <b>ISAAC</b> All rights reserved.<br></li>
+                </ul>
+            </div>
+    </div>
+
+
+    <div id="ftWeb">
+        <hr>
+        <a href="https://www.facebook.com/isaactoast.online"><img src="./img/defaltTemplate/sns_f2.png" alt=""></a>
+        <a href="https://www.instagram.com/explore/tags/%EC%9D%B4%EC%82%AD%ED%86%A0%EC%8A%A4%ED%8A%B8/"><img src="./img/defaltTemplate/sns_i2.png" alt=""></a>
+        <a href="https://blog.naver.com/isaac-toast"><img src="./img/defaltTemplate/sns_b2.png" alt=""></a>
+        <p style="margin-top: 10px;">Copyright © <b>ISAAC</b> All rights reserved.</p>
+    </div>
+        
+</body>
+</html>

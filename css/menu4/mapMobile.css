@@ -1,0 +1,100 @@
+ /* 모바일용 반응형 웹 */
+ @media(max-width: 767px) {
+    
+
+
+/* 전국지도 */
+
+
+
+
+#map{
+ 
+}
+
+#geoborder{
+   
+}
+
+/* 매장찾기 테이블 */     
+#addressPlacediv{
+    padding-top: 550px;
+    margin-left: -580px;
+ 
+}
+
+#addressPlacediv input{
+   
+   
+}
+
+#addressPlacediv button{
+    font-size: 13px;
+    vertical-align: bottom;
+}
+
+#placeName{
+  
+   
+    padding-right: 0px; 
+     font-size: 14px;
+}
+
+#placeNameText{
+   width: 30%;
+}
+
+  tr td{
+font-size: 15px;
+color: #666666;
+padding: 5px; 
+}
+
+
+
+/* 시도별 매장안내 */
+#infodiv{
+    padding-left: 0px;
+    margin-left: -560px;
+}
+
+#infop{
+    color: #666666; 
+    margin-top: 20px;
+    font-weight: bold;
+    padding-left: -150px;
+}
+#infop>div{
+    padding-left: 10px;
+}
+
+
+#placeinfo{
+    
+    text-align: center;
+}
+
+#placeinfo button{
+    vertical-align: baseline;
+    font-size: 15px;
+    padding: 0px;
+}
+
+#infodiv td{
+    margin: 0px;
+     padding: 0px;
+     
+}
+#infodiv td button{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+ }
