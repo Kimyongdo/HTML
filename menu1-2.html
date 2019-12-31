@@ -1,218 +1,218 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <meta charset="UTF-8">
-    <title>커피&차 1 페이지 | 이삭토스트</title>
-
-    <style>
-        * {
-            padding: 0px;
-            margin: 0px;
-        }
-
-        @font-face {
-            font-family: "NanumGothic";
-            src: url("fonts/NanumGothic.ttf");
-        }
-
-        @font-face {
-            font-family: "NanumGothicBold";
-            src: url("fonts/NanumGothicBold.ttf");
-        }
-
-        body {
-            font-family: "NanumGothic";
-        }
-
-        .header {
-            width: 100%;
-            height: 108px;
-            background-color: white;
-
-        }
-
-        .main {
-            width: 100%;
-            height: 285px;
-            background-image: url("images/thumb.jpg");
-        }
-
-        #title {
-            padding-top: 100px;
-            text-align: center;
-            color: white;
-            font-family: "NanumGothicBold";
-            font-size: 3.0em;
-            font-style: NanumGothicBold;
-        }
-
-        .local {
-            display: block;
-            padding-top: 20px;
-            text-align: center;
-            color: white;
-            font-family: "NanumGothic";
-            font-size: 13px;
-        }
-
-        .local span.l_i {
-            color: #dde4e9
-        }
-
-        .tap_menu {
-            height: 50px;
-            width: 100%;
-            position: relative;
-            background: #363636;
-        }
-
-        .tap_list{
-            list-style: none;
-        }
-
-        .tap_item{
-            position: relative;
-            float: left;
-            width: 33.333%;
-            margin: 0 0 0 -1px;
-        }
-
-        .tap_list a{
-            display:block; 
-            height:50px;
-            line-height:50px;
-            text-align:center;
-            text-decoration:none;
-            border:1px solid #d7d7d7; border-bottom:none; border-top:none;
-            font-size:19px;
-            color: white;
-        }
-
-        .none{
-            width: 100%;
-            height: 80px;
-            display: hidden;
-        }
-
-        .category_title {
-            margin-left: 100px;
-            margin-right: 100px;
-            font-size:30px; font-weight:600;
-            color:#d90317; text-decoration:none;
-            border-bottom:1px solid #d8d8d8;
-            padding-bottom:12px; margin-bottom:35px
-        }
-        
-        .menu_item{
-            display: flex
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=1400,user-scalable=yes,target-densitydpi=medium-dpi">
+    <meta http-equiv="imagetoolbar" content="no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     
-        }
+    <!-- 부트스트랩 라이브러리 추가-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
-        .title_kr{
-            font-family: "NanumGothicBold";
-            text-align: center;
-        }
+    <!-- css 추가 -->
+    <link rel="stylesheet" href="./css/menu1/menu1-2.css">
 
-        .title_eng{
-            text-align: center;
-        }
+    <!-- js추가 -->
+    <script src="./js/menu1/menu1-2.js"></script>
 
-        .title_kr:hover{
-            font-family: "NanumGothicBold";
-            color: white;
-            background-color: #d90317;
-            border-radius: 15px;
-        }
-
-    </style>
 </head>
-
 <body>
-    <div class="header"></div>
-    <div class="main">
-        <div id="title">커피&티</div>
-        <div class="local">
-            <span>HOME </span>
-            <span class="l_i"> > </span>
-            <span> 메뉴 </span>
-            <span class="l_i"> > </span>
-            <span> 커피&티</span>
+    <!-- header영역 -->
+    <header class="hd">
+        <div id="header">
+            <div id="Logo">
+                <a href="./index.html"><img src="./img/defaltTemplate/logo_header.png" alt=""></a>
+            </div>
+            <div id="sns">
+                <a href="https://www.facebook.com/isaactoast.online"><img src="./img/defaltTemplate/sns_f.png" alt=""></a>
+        <a href="https://www.instagram.com/explore/tags/%EC%9D%B4%EC%82%AD%ED%86%A0%EC%8A%A4%ED%8A%B8/"><img src="./img/defaltTemplate/sns_i.png" alt=""></a>
+        <a href="https://blog.naver.com/isaac-toast"><img src="./img/defaltTemplate/sns_b.png" alt=""></a>
+            </div>
+            <span id="menubox">
+                <input type="checkbox" id="menuicon">
+                <label for="menuicon" onclick>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </span>
         </div>
+        <div id="mainMenu">
+            <div id="menu">
+                <div id="subMenu"></div>
+                <nav id="nav" class="navbar">
+                    <ul id="main">
+                        <li id="mainList">
+                            <a href="./menu1-1.html" id="topList">메뉴</a>
+                            <ul id="sub">
+                                <li><a href="./menu1-1.html" id="subList">토스트</a></li>
+                                <li><a href="./menu1-2.html" id="subList">커피&amp;티</a></li>
+                                <li><a href="./menu1-3.html" id="subList">과일주스&amp;음료</a></li>
+                            </ul>
+                        </li>
+                        <li id="mainList">
+                            <a href="./menu2-1.html" id="topList">창업정보</a>
+                            <ul id="sub">
+                                <li><a href="./menu2-1.html" id="subList">창업안내</a></li>
+                                <li><a href="./menu2-2.html" id="subList">교육 프로그램</a></li>
+                                <li><a href="./menu2-3.html" id="subList">인테리어</a></li>
+                                <li><a href="./menu2-4.html" id="subList">점포인터뷰</a></li>
+                                <li><a href="./menu2-5.html" id="subList">가맹문의</a></li>
+                            </ul>
+                        </li>
+                        <li id="mainList">
+                            <a href="./menu3-1.html" id="topList">브랜드</a>
+                            <ul id="sub">
+                                <li><a href="./menu3-1.html" id="subList">브랜드 소개</a></li>
+                                <li><a href="./menu3-2.html" id="subList">연혁</a></li>
+                                <li><a href="./menu3-3.html" id="subList">CEO 인사말</a></li>
+                            </ul>
+                        </li>
+                        <li id="mainList">
+                            <a href="./menu4-1.html" id="topList">매장찾기</a>
+                            <ul id="sub">
+                                <li><a href="./menu4-1.html" id="subList">국내</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
     </div>
-    <div class="tap_menu">
-        <ul class="tap_list">
-            <li class="tap_item"><a href="menu1-1.html">토스트</a></li>
-            <li class="tap_item"><a href="menu1-2.html">커피&티</a></li>
-            <li class="tap_item"><a href="menu1-3.html">과일주스&음료</a></li>
-        </ul>
+</header>
+
+    <!-- nav영역 -->
+        <div>
+            <!-- 메인 메뉴 이미지 -->
+            <div id="mainMenuImg" style="background-image: url(./img/defaltTemplate/sVisual_01.jpg)">
+                <div id="menuTitle">커피&티</div>
+                <div class="local">
+                  <span id="localList">HOME</span>
+                  <span id="lcoalArrow"> > </span>
+                  <span id="localList">메뉴</span id="localList">
+                  <span id="lcoalArrow"> > </span id="lcoalArrow">
+                  <span id="localList">커피&티</span id="localList">
+                </div>
+            </div>
+        <!-- nav -->
+                <div class="nav_menu">
+                    <label for="toggle" onclick></label>
+                    <input type="checkbox" id="toggle">
+                    <ul class="nav_ul">
+                        <li><a href="./menu1-1.html" class="nav_link">토스트</a></li>
+                        <li><a href="./menu1-2.html" class="nav_on">커피&티</a></li>
+                        <li><a href="./menu1-3.html" class="nav_link">과일주스&음료</a></li>
+                    </ul>
+                </div>
+        </div>
+            
+    <!-- contents영역 -->
+    <div class="container">
+            <p id="category_title">커피</p>
+            <div class="row">
+                <ul class="col-3" id="item_li">
+                    <li class="item_img"><img src="./images/coffee/espresso.jpg" alt=""></li>
+                    <li class="title_kr">에스프레소</li>
+                    <li class="title_eng">Espresso</li>
+                </ul>
+                <ul class="col-3" id="item_li">
+                    <li class="item_img"><img src="./images/coffee/americano.jpg" alt=""></li>
+                    <li class="title_kr">아메리카노</li>
+                    <li class="title_eng">Americano</li>
+                </ul>
+                <ul class="col-3" id="item_li">
+                    <li class="item_img"><img src="./images/coffee/cafe_latte.jpg" alt=""></li>
+                    <li class="title_kr">카페라떼</li>
+                    <li class="title_eng">Cafe latte</li>
+                </ul>
+                <ul class="col-3" id="item_li">
+                    <li class="item_img"><img src="./images/coffee/vanilla_latte.jpg" alt=""></li>
+                    <li class="title_kr">바닐라라떼</li>
+                    <li class="title_eng">Vanilla latte</li>
+                </ul>
+                <ul class="col-3" id="item_li">
+                    <li class="item_img"><img src="./images/coffee/cafe_mocha.jpg" alt=""></li>
+                    <li class="title_kr">카페모카</li>
+                    <li class="title_eng">Cafe mocha</li>
+                </ul>
+                <ul class="col-3" id="item_li">
+                    <li class="item_img"><img src="./images/coffee/caramel_latte.jpg" alt=""></li>
+                    <li class="title_kr">카라멜라떼</li>
+                    <li class="title_eng">Caramel latte</li>
+                </ul>
+           
+            </div>
     </div>
+    <div class="container">
+            <p id="category_title">티&티라떼</p>
+            <div class="row">
+                <ul class="col-3" id="item_li">
+                    <li class="item_img"><img src="./images/coffee/milk_tea.png" alt=""></li>
+                    <li class="title_kr">밀크티/아이스밀크티</li>
+                    <li class="title_eng">Hot milktea / Iced milktea</li>
+                </ul>
+                <ul class="col-3" id="item_li">
+                    <li class="item_img"><img src="./images/coffee/iced_tea.jpg" alt=""></li>
+                    <li class="title_kr">아이스티</li>
+                    <li class="title_eng">Iced tea</li>
+                </ul>
+                <ul class="col-3" id="item_li">
+                    <li class="item_img"><img src="./images/coffee/choco.jpg" alt=""></li>
+                    <li class="title_kr">핫초코/아이스초코</li>
+                    <li class="title_eng">Hot choco / Iced choco</li>
+                </ul>
+                <ul class="col-3" id="item_li">
+                    <li class="item_img"><img src="./images/coffee/green_tea.jpg" alt=""></li>
+                    <li class="title_kr">녹차</li>
+                    <li class="title_eng">Green tea</li>
+                </ul>
+                <ul class="col-3" id="item_li">
+                    <li class="item_img"><img src="./images/coffee/earlgrey.jpg" alt=""></li>
+                    <li class="title_kr">얼그레이</li>
+                    <li class="title_eng">Earl grey</li>
+                </ul>
+            
+            </div>
+        </div>
+        
+        
+    
 
-    <div class="none"></div>
-    <p class="category_title">커피</p>
-
-    <div class="menu_item">
-        <div>
-            <p class=><img src="./images/coffee/espresso.jpg" alt=""></p>
-            <p class="title_kr">에스프레소</p>
-            <p class="title_eng">Espresso</p>
-        </div>
-        <div>
-            <p class="toast"><img src="./images/coffee/americano.jpg" alt=""></p>
-            <p class="title_kr">아메리카노</p>
-            <p class="title_eng">Americano</p>
-        </div>
-        <div>
-            <p class="toast"><img src="./images/coffee/cafe_latte.jpg" alt=""></p>
-            <p class="title_kr">카페라떼</p>
-            <p class="title_eng">Cafe latte</p>
-        </div>
-        <div>
-            <p class="toast"><img src="./images/coffee/vanilla_latte.jpg" alt=""></p>
-            <p class="title_kr">바닐라 라떼</p>
-            <p class="title_eng">Vanilla latte</p>
-        </div>
-        <div>
-            <p class="toast"><img src="./images/coffee/cafe_mocha.jpg" alt=""></p>
-            <p class="title_kr">카페모카</p>
-            <p class="title_eng">Cafe mocha</p>
-        </div>
-        <div>
-            <p class="toast"><img src="./images/coffee/caramel_latte.jpg" alt=""></p>
-            <p class="title_kr">카라멜라떼</p>
-            <p class="title_eng">Caramel latte</p>
-        </div>
+    <!-- footer 영역 -->
+    <div id="ft">
+        <hr>
+            <div id="company">
+                <div class="logo"><img src="./img/defaltTemplate/logo_footer.png" alt=""></div>
+                <div class="ftMenu">
+                    <a href="./menu3-1.html">회사소개</a>
+                    <a href="">제휴/제안</a>
+                    <a href="">고객의 소리</a>
+                    <a href="">이용약관</a>
+                    <a href="">개인정보처리방침</a>
+                    <a href="">이메일무단수집거부</a>
+                    <a href="">점주공간</a>
+                </div>
+            </div>
+        <hr>
+            <div id="copyright">
+                <ul class="copyUl">
+                    <li><span class="ftli">창업문의 : </span class="ftli2">1833-9299</li>
+                    <li><span class="ftli" class="ftli">서울사업본부 : </span class="ftli2">서울시 송파구 중대로 97 효원빌딩 6층, 13층 (TEL:02-6959-1086)</li>
+                    <li><span class="ftli" class="ftli">대전사무실 : </span class="ftli2">대전광역시 중구 산서로 53번길 11 (TEL:042-274-3060)</li>
+                    <li><span class="ftli" class="ftli">대구사무실 : </span class="ftli2">대구광역시 수성구 동대구로 376 범어숲화성파크드림S 상가 225호</li>
+                    <li class="ftli">Copyright © <b>ISAAC</b> All rights reserved.<br></li>
+                </ul>
+            </div>
     </div>
-
-    <p class="category_title">티&티라떼</p>
-    <div class="menu_item">
-        <div>
-            <p class="toast"><img src="./images/coffee/milk_tea.png" alt=""></p>
-            <p class="title_kr">밀크티/아이스밀크티</p>
-            <p class="title_eng">Hot milktea/Iced milktea</p>
-        </div>
-        <div>
-            <p class="toast"><img src="./images/coffee/iced_tea.jpg" alt=""></p>
-            <p class="title_kr">아이스티</p>
-            <p class="title_eng">Iced tea</p>
-        </div>
-        <div>
-            <p class="toast"><img src="./images/coffee/choco.jpg" alt=""></p>
-            <p class="title_kr">핫초코/아이스초코</p>
-            <p class="title_eng">Hot choco/Iced choco</p>
-        </div>
-        <div>
-            <p class="toast"><img src="./images/coffee/green_tea.jpg" alt=""></p>
-            <p class="title_kr">녹차</p>
-            <p class="title_eng">Green tea</p>
-        </div>
-        <div>
-            <p class="toast"><img src="./images/coffee/earlgrey.jpg" alt=""></p>
-            <p class="title_kr">얼그레이</p>
-            <p class="title_eng">Earl grey</p>
-        </div>
+    <div id="ftWeb">
+        <hr>
+        <a href="https://www.facebook.com/isaactoast.online"><img src="./img/defaltTemplate/sns_f2.png" alt=""></a>
+        <a href="https://www.instagram.com/explore/tags/%EC%9D%B4%EC%82%AD%ED%86%A0%EC%8A%A4%ED%8A%B8/"><img src="./img/defaltTemplate/sns_i2.png" alt=""></a>
+        <a href="https://blog.naver.com/isaac-toast"><img src="./img/defaltTemplate/sns_b2.png" alt=""></a>
+        <p style="margin-top: 10px;">Copyright © <b>ISAAC</b> All rights reserved.</p>
     </div>
-
+        
 </body>
-
 </html>
