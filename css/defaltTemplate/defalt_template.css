@@ -79,7 +79,8 @@ input[id="menuicon"]{
 }
 #mainList{
     position:relative; 
-    display:inline;
+    float:left; 
+    width:115px;
 }
 #topList{
     display:block; 
@@ -361,6 +362,7 @@ label, #toggle{
     input[id="menuicon"] + label span:nth-child(3){
         bottom:0;
     }
+
     input[id="menuicon"]:checked + label span:nth-child(1){
         top: 50%;
         transform: translateY(-50%) rotate(45deg);
