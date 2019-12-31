@@ -385,32 +385,7 @@ ul {
 input[id="menuicon"]{
     display: none
 }
-input[id="menuicon"] + label {
-    display: block;
-    width: 36px;
-    height: 30px;
-    position: relative;
-    cursor: pointer;
-}
-input[id="menuicon"] + label span {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 5px;
-    border-radius: 30px;
-    background-color: #000;
-    transition: all .35s;
-} 
-input[id="menuicon"] + label span:nth-child(1){
-    top:0;
-}
-input[id="menuicon"] + label span:nth-child(2){
-    top: 50%;
-    transform: translateY(-50%);
-}
-input[id="menuicon"] + label span:nth-child(3){
-    bottom:0;
-}
+
 #mainMenu{
     display: block;
     position: relative;
@@ -440,6 +415,7 @@ input[id="menuicon"] + label span:nth-child(3){
     z-index:10; 
     clear:both; 
     zoom:1;
+    list-style:none;
 }
 #main:after{
     display:block; 
@@ -450,7 +426,6 @@ input[id="menuicon"] + label span:nth-child(3){
 #mainList{
     position:relative; 
     float:left; 
-    display:inline;
     width:115px;
 }
 #topList{
@@ -477,7 +452,7 @@ input[id="menuicon"] + label span:nth-child(3){
     position:absolute; 
     z-index:15; 
     top: 108px;
-    width: 100px; 
+    width: 100%; 
     height:200px; 
     background-color:#ffffff; 
     opacity: 0.9;
@@ -581,8 +556,10 @@ input[id="menuicon"] + label span:nth-child(3){
 }
 
 /* 반응형 웹 */
-@media screen and (min-width: 320px) and (max-width:600px){
-
+@media screen and (max-width:600px){
+    #nav{
+        display: none;
+    }
     /* 메인메뉴 */
     #sns{
         display: none;
@@ -596,11 +573,36 @@ input[id="menuicon"] + label span:nth-child(3){
     #menubox{
         display: block;
         top: 15px;
-        left: 430px;
+        left: 90%;
     }
-    #nav{
-        display: none;
+    input[id="menuicon"] + label {
+        display: block;
+        width: 36px;
+        height: 30px;
+        position: relative;
+        cursor: pointer;
     }
+    input[id="menuicon"] + label span {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        border-radius: 30px;
+        background-color: #000;
+        transition: all .35s;
+    } 
+
+    input[id="menuicon"] + label span:nth-child(1){
+        top:0;
+    }
+    input[id="menuicon"] + label span:nth-child(2){
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    input[id="menuicon"] + label span:nth-child(3){
+        bottom:0;
+    }
+
     input[id="menuicon"]:checked + label span:nth-child(1){
         top: 50%;
         transform: translateY(-50%) rotate(45deg);
@@ -613,11 +615,9 @@ input[id="menuicon"] + label span:nth-child(3){
         transform: translateY(50%) rotate(-45deg);
     }
     .hd{
-        display: block;
         min-width: unset;
     }
     #header{
-        display: block;
         width: 100%;
     }
     #mainMenu{
@@ -643,19 +643,21 @@ input[id="menuicon"] + label span:nth-child(3){
     #topList{
         color: white !important;
     }
-    
     #subMenu{
         all: unset;
     }
     #sub{
         display: none !important;
+        visibility: hidden;
     }
     #subList{
         display: none !important;
+        visibility: hidden;
     }
 
-    /* 네비역역 */
+      /* 네비영역 */
     .nav_menu{
+        display: block;
         width: 100%;
         position: relative;
         background: #363636;
@@ -666,7 +668,6 @@ input[id="menuicon"] + label span:nth-child(3){
     }
     .nav_ul li{
         all: unset !important;
-        float:none; 
         margin:0;
     }
     .nav_ul li a{

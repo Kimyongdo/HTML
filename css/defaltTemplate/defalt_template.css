@@ -70,6 +70,7 @@ input[id="menuicon"]{
     z-index:10; 
     clear:both; 
     zoom:1;
+    list-style:none;
 }
 #main:after{
     display:block; 
