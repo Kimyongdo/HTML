@@ -80,6 +80,7 @@ input[id="menuicon"]{
 #mainList{
     position:relative; 
     float:left; 
+    text-decoration:none; 
     width:115px;
 }
 #topList{
