@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=1400,user-scalable=yes,target-densitydpi=medium-dpi">
+    <meta http-equiv="imagetoolbar" content="no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    
+    <!-- 부트스트랩 라이브러리 추가-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- css 추가 -->
+    <link rel="stylesheet" href="./css/menu2/menu2-5.css">
+    <!-- 모바일용 -->
+    <link rel="stylesheet" href="./css/menu2/question.css">
+    <!-- 웹용 -->
+    <link rel="stylesheet" href="./css/menu2/questionMobile.css">
+
+    <!-- js추가 -->
+    <script src="./js/menu2/menu2-5.js"></script>
+
+    <script>
+  
+        //처음 시작시 40~49로 시작
+        $(document).ready(function(){
+             $("select option[value='40~49']").attr("selected", true);
+        });
+
+    </script>
+
+      <!-- 자동방지여부체크 -->
+<script src='https://www.google.com/recaptcha/api.js'></script> 
+<script type="text/javascript"> /* 서브밋 전에 리캡챠 체크 여부 를 확인합니다. */ 
+function FormSubmit() { if (grecaptcha.getResponse() == ""){ 
+    alert("리캡챠를 체크해야 합니다."); 
+    return false;
+    }  else { return true; } } 
+    </script>
+
+<script>
+
+    function GoToEnroll() {
+
+        var obEmail = document.getElementById("email");
+
+        if (!obEmail.value) {
+            obEmail.focus();
+
+            return;
+
+        } else {
+
+            if (!CheckEmail(obEmail.value)) {
+
+                alert("이메일 형식이 잘못되었습니다");
+
+                obEmail.focus();
+
+                return;
+
+            }
+
+        }
+
+    }
+
+    function CheckEmail(str) {
+
+        var reg_email = /^([0-9a-zA-Z_\.-]+)@([0-9a-zA-Z_-]+)(\.[0-9a-zA-Z_-]+){1,2}$/;
+
+        if (!reg_email.test(str)) {
+
+            return false;
+
+        } else {
+
+            return true;
+
+        }
+
+    }
+</script>
+
+
+
+</head>
+<body>
+    <!-- header영역 -->
+    <header class="hd">
+        <div id="header">
+            <div id="Logo">
+                <a href="./index.html"><img src="./img/defaltTemplate/logo_header.png" alt=""></a>
+            </div>
+            <div id="sns">
+                <a href="https://www.facebook.com/isaactoast.online"><img src="./img/defaltTemplate/sns_f.png" alt=""></a>
+        <a href="https://www.instagram.com/explore/tags/%EC%9D%B4%EC%82%AD%ED%86%A0%EC%8A%A4%ED%8A%B8/"><img src="./img/defaltTemplate/sns_i.png" alt=""></a>
+        <a href="https://blog.naver.com/isaac-toast"><img src="./img/defaltTemplate/sns_b.png" alt=""></a>
+            </div>
+            <span id="menubox">
+                <input type="checkbox" id="menuicon">
+                <label for="menuicon" onclick>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </span>
+        </div>
+        <div id="mainMenu">
+            <div id="menu">
+                <div id="subMenu"></div>
+                <nav id="nav" class="navbar">
+                    <ul id="main">
+                        <li id="mainList">
+                            <a href="./menu1-1.html" id="topList">메뉴</a>
+                            <ul id="sub">
+                                <li><a href="./menu1-1.html" id="subList">토스트</a></li>
+                                <li><a href="./menu1-2.html" id="subList">커피&amp;티</a></li>
+                                <li><a href="./menu1-3.html" id="subList">과일주스&amp;음료</a></li>
+                            </ul>
+                        </li>
+                        <li id="mainList">
+                            <a href="./menu2-1.html" id="topList">창업정보</a>
+                            <ul id="sub">
+                                <li><a href="./menu2-1.html" id="subList">창업안내</a></li>
+                                <li><a href="./menu2-2.html" id="subList">교육 프로그램</a></li>
+                                <li><a href="./menu2-3.html" id="subList">인테리어</a></li>
+                                <li><a href="./menu2-4.html" id="subList">점포인터뷰</a></li>
+                                <li><a href="./menu2-5.html" id="subList">가맹문의</a></li>
+                            </ul>
+                        </li>
+                        <li id="mainList">
+                            <a href="./menu3-1.html" id="topList">브랜드</a>
+                            <ul id="sub">
+                                <li><a href="./menu3-1.html" id="subList">브랜드 소개</a></li>
+                                <li><a href="./menu3-2.html" id="subList">연혁</a></li>
+                                <li><a href="./menu3-3.html" id="subList">CEO 인사말</a></li>
+                            </ul>
+                        </li>
+                        <li id="mainList">
+                            <a href="./menu4-1.html" id="topList">매장찾기</a>
+                            <ul id="sub">
+                                <li><a href="./menu4-1.html" id="subList">국내</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+    </div>
+</header>
+
+    <!-- nav영역 -->
+        <div>
+            <!-- 메인 메뉴 이미지 -->
+            <div id="mainMenuImg" style="background-image: url(./img/defaltTemplate/sVisual_02.jpg)">
+                <div id="menuTitle">가맹문의</div>
+                <div class="local">
+                  <span id="localList">HOME</span>
+                  <span id="lcoalArrow"> > </span>
+                  <span id="localList">창업정보</span id="localList">
+                  <span id="lcoalArrow"> > </span id="lcoalArrow">
+                  <span id="localList">가맹문의</span id="localList">
+                </div>
+            </div>
+        <!-- nav -->
+                <div class="nav_menu">
+                    <label for="toggle" onclick></label>
+                    <input type="checkbox" id="toggle">
+                    <ul class="nav_ul">
+                        <li><a href="./menu2-1.html" class="nav_link">창업안내</a></li>
+                        <li><a href="./menu2-2.html" class="nav_link">교육프로그램</a></li>
+                        <li><a href="./menu2-3.html" class="nav_link">인테리어</a></li>
+                        <li><a href="./menu2-4.html" class="nav_link">점포인터뷰</a></li>
+                        <li><a href="./menu2-5.html" class="nav_on">가맹문의</a></li>
+                    </ul>
+                </div>
+        </div>
+            
+    <!-- contents영역 -->
+
+
+    <div class="container" style="margin-top: 80px;"> 
+        <form>
+         <table id=table border="1px" style="border: 1px solid #ececec;">
+             <tr>
+                 <td id="question" style="border-top:2px solid black;">성명<span style="color:red;">*</span></td>
+                 <td id="question2" colspan="3" style="border-top:2px solid black;" ><input type="text" required></td>
+             </tr>
+             
+             <tr>
+                 <td id="question">비밀번호 <span style="color:red;">*</span></td>
+                 <td id="question2" colspan="3"><input style="width: 140px;" type="password" required></td>
+             </tr>
+     
+             <tr>
+                 <td id="question" >연락처 <span style="color:red;">*</span></td>
+                 <td id="question2" colspan="3";>
+                     <select style="padding: 2px;" name="phone;" >
+                     <option value="a">010</option>
+                     <option value="a">011</option>
+                     <option value="a">016</option>
+                     <option value="a">018</option>
+                     <option value="a">019</option>
+                     <option value="a">02</option>
+                     <option value="a">031</option>
+                     <option value="a">032</option>
+                     <option value="a">033</option>
+                     <option value="a">041</option>
+                     <option value="a">042</option>
+                     <option value="a">043</option>
+                     <option value="a">051</option>
+                     <option value="a">052</option>
+                     <option value="a">053</option>
+                     <option value="a">054</option>
+                     <option value="a">055</option>
+                     <option value="a">061</option>
+                     <option value="a">062</option>
+                     <option value="a">063</option>
+                     <option value="a">064</option>
+                 </select>
+                 <!-- 숫자만 가능한 정규식이용  -->
+                  <input type="text" style="width: 120px;" required onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"/>
+                  <input type="text" style="width: 120px;" required onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"/>
+             </td>
+             </tr>
+     
+             <tr>
+                 <td id="question" >이메일</td>
+                 <td id="question2" colspan="3"><input type="text" id="email" name="email"></td>
+             </tr>
+             
+             <tr>
+                 <td id="question" >연령대</td>
+                 <td id="question2" ><select name="phone">
+                     <option value="a">20~29</option>
+                     <option value="a">30~39</option>
+                     <option value="a" selected>40~49</option>
+                     <option value="a">50~59</option>
+                     <option value="a">60~69</option>
+                     <option value="a">70~79</option>
+                     </td>
+                 <td id="question" style="width: 154px;">성별</td>
+               
+                 <td id="question2">
+                    <!-- label을 넣으면 글자가 안나옴. -->
+                    <input type="radio" name="rg1" id="rb1" value="male">남자
+                     <input type="radio" name="rg1" id="rb2" value="female">여자
+                 </td>
+             </tr>
+             
+     
+             <tr>
+                 <td id="question">점포유무</td>
+                 <td id="question2">
+                    
+                     <input type="radio" name="rg2" id="rb3" value="yes">있음
+                     <input type="radio" name="rg2" id="rb4" value="no">없음
+                    
+                  
+     
+                 <td id="question" >사업경험</td>
+                 <td id="question2">
+                     <input type="radio" name="rg3" id="rb5" value="byes">있음
+                     <input type="radio" name="rg3" id="rb6" value="bno">없음
+             </tr>
+     
+             <tr>
+                 <td id="question" >창업희망지역 <span style="color:red;">*</span></td>
+                 <td id="question2"><input type="text" required></td>
+                 <td id="question" >투자가능금액  <span style="color:red;">*</span></td>
+                 <td id="question2"><input style="width:100px;" type="text" required onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"/>  만원</td>
+             </tr>
+     
+             <tr>
+                 <td id="question" >인지경로</td>
+                 <td id="question2" colspan="3" > 
+               <input type="checkbox" name="place" value="visit">매장방문
+                 <input type="checkbox" name="place" value="introduce">지인소개
+                 <input type="checkbox" name="place" value="homepage">홈페이지
+                 <input type="checkbox" name="place" value="ad">신문광고<br>
+                <input type="checkbox" name="place" value="coverage">기사보도
+                 <input type="checkbox" name="place" value="fair">박람회
+                 <input type="checkbox" name="place" value="else">기타
+                 <input type="text">
+     
+             </tr>
+     
+             <tr>
+                 <td id="question">문의내용</td>
+                 <td id="question2" colspan="3"><textarea id=textarea name="" id="" cols="30" rows="10" ></textarea></td>
+             </tr>
+     
+             <tr>
+                 <td id="question">자동등록방지</td>
+                 <div class="g-recaptcha" data-sitekey="123"></div>
+                 <td id="question2" colspan="3">자동등록방지 숫자를 순서대로 입력하세요</td>
+                 
+             </tr>
+      
+         </table>
+         <p style="font-size: 15px;">* 필수 표시 항목은 필수입력해야하는 항목입니다.</p>
+     
+     
+         <p style="font-size: 20px; margin-top: 40px;"><strong>개인정보 수입 및 이용 동의 약관</strong></p>
+         <iframe style="border: 1px solid lightgray; margin-top: -7px;" src="./questionIframe.html" frameborder="0" width="100%" height="150"></iframe>
+     
+     
+     
+     
+     <p id=personinfo ><label><input type="checkbox" name="agree" value="agree">개인정보 수집 및 이용 동의 
+         <a style="color: black; text-decoration: none;" href="#">[상세보기]</a>
+     </label></p>
+     
+     
+     <div style="text-align: center; margin-top: 15px;">
+         <input id=submit type="submit" value="글쓰기" onclick="GoToEnroll()">
+         <input id=reset type="reset" value="취소" >
+     </div>
+     
+        
+    </form>
+     
+     </div>
+     
+   
+
+    <!-- footer 영역 -->
+    <div id="ft">
+        <hr>
+            <div id="company">
+                <div class="logo"><img src="./img/defaltTemplate/logo_footer.png" alt=""></div>
+                <div class="ftMenu">
+                    <a href="./menu3-1.html">회사소개</a>
+                    <a href="">제휴/제안</a>
+                    <a href="">고객의 소리</a>
+                    <a href="">이용약관</a>
+                    <a href="">개인정보처리방침</a>
+                    <a href="">이메일무단수집거부</a>
+                    <a href="">점주공간</a>
+                </div>
+            </div>
+        <hr>
+            <div id="copyright">
+                <ul class="copyUl">
+                    <li><span class="ftli">창업문의 : </span class="ftli2">1833-9299</li>
+                    <li><span class="ftli" class="ftli">서울사업본부 : </span class="ftli2">서울시 송파구 중대로 97 효원빌딩 6층, 13층 (TEL:02-6959-1086)</li>
+                    <li><span class="ftli" class="ftli">대전사무실 : </span class="ftli2">대전광역시 중구 산서로 53번길 11 (TEL:042-274-3060)</li>
+                    <li><span class="ftli" class="ftli">대구사무실 : </span class="ftli2">대구광역시 수성구 동대구로 376 범어숲화성파크드림S 상가 225호</li>
+                    <li class="ftli">Copyright © <b>ISAAC</b> All rights reserved.<br></li>
+                </ul>
+            </div>
+    </div>
+    <div id="ftWeb">
+        <hr>
+        <a href="https://www.facebook.com/isaactoast.online"><img src="./img/defaltTemplate/sns_f2.png" alt=""></a>
+        <a href="https://www.instagram.com/explore/tags/%EC%9D%B4%EC%82%AD%ED%86%A0%EC%8A%A4%ED%8A%B8/"><img src="./img/defaltTemplate/sns_i2.png" alt=""></a>
+        <a href="https://blog.naver.com/isaac-toast"><img src="./img/defaltTemplate/sns_b2.png" alt=""></a>
+        <p style="margin-top: 10px;">Copyright © <b>ISAAC</b> All rights reserved.</p>
+    </div>
+</body>
+</html>
