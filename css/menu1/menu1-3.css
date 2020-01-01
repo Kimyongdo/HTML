@@ -606,6 +606,7 @@ body { font-family: "NanumGothic";}
     
 #item_li{
     list-style: none;
+    text-align: center;
 
 }
 
@@ -617,6 +618,7 @@ body { font-family: "NanumGothic";}
 
 
 .title_kr{
+    display: inline-block;
     width: 230px;
     padding: 2px;
     margin-top: 10px;
@@ -626,6 +628,7 @@ body { font-family: "NanumGothic";}
 }
 
 .title_eng{
+    display: inline-block;
     width: 230px;
     padding: 2px;
     margin-top: 2px;
