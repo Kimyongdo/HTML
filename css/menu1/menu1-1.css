@@ -10,14 +10,14 @@ body{
 .hd{
     position: relative;
     z-index: 100;
-    min-width: 1100px;
+    min-width: 1140px;
 }
 #header{
     position: relative;
     margin: 0 auto;
     padding: 0;
     zoom: 1;
-    width: 1100px;
+    width: 1140px;
 }
 #Logo{
     float: left;
@@ -40,32 +40,7 @@ body{
 input[id="menuicon"]{
     display: none
 }
-input[id="menuicon"] + label {
-    display: block;
-    width: 36px;
-    height: 30px;
-    position: relative;
-    cursor: pointer;
-}
-input[id="menuicon"] + label span {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 5px;
-    border-radius: 30px;
-    background-color: #000;
-    transition: all .35s;
-} 
-input[id="menuicon"] + label span:nth-child(1){
-    top:0;
-}
-input[id="menuicon"] + label span:nth-child(2){
-    top: 50%;
-    transform: translateY(-50%);
-}
-input[id="menuicon"] + label span:nth-child(3){
-    bottom:0;
-}
+
 #mainMenu{
     display: block;
     position: relative;
@@ -77,6 +52,7 @@ input[id="menuicon"] + label span:nth-child(3){
     position: absolute;
     z-index: 15;
     width: 100%;
+    height: 100%;
 }
 #menu:after{
     display:block; 
@@ -95,6 +71,8 @@ input[id="menuicon"] + label span:nth-child(3){
     z-index:10; 
     clear:both; 
     zoom:1;
+    padding-inline-start: 0px;
+    list-style:none;
 }
 #main:after{
     display:block; 
@@ -105,8 +83,7 @@ input[id="menuicon"] + label span:nth-child(3){
 #mainList{
     position:relative; 
     float:left; 
-    display:inline;
-    width:115px;
+    width:140px;
 }
 #topList{
     display:block; 
@@ -146,7 +123,7 @@ input[id="menuicon"] + label span:nth-child(3){
 #sub{
     display:none; 
     position:absolute; 
-    width:140px; 
+    width:140px;
     top:90px; 
     font-size: 14px; 
     text-align: left;
@@ -210,7 +187,7 @@ input[id="menuicon"] + label span:nth-child(3){
     background: #363636;
 }
 .nav_ul{
-    width:1100px;
+    width:1140px;
     margin:0 auto; 
     list-style: none; 
 }
@@ -257,9 +234,9 @@ input[id="menuicon"] + label span:nth-child(3){
     color:#282828; 
     background:#fff;
 }
-/* .nav_ul li{
+ /* .nav_ul li{
     width:50%;
-} */
+}  */
 .nav_ul li{
     width:33.333%;
 }
@@ -267,6 +244,7 @@ input[id="menuicon"] + label span:nth-child(3){
 .nav_ul li{
     width:25%;
 }
+
 .nav_ul li{
     width:20%;
 }
@@ -282,7 +260,7 @@ label, #toggle{
     margin-top: 70px;
 }
 #company{
-    width:1010px;
+    width:1140px;
     margin:0 auto;
 }
 .logo {
@@ -309,7 +287,7 @@ label, #toggle{
     text-decoration:none
 }
 #copyright {
-    width:1100px;
+    width:1140px;
     height:176px; 
     margin:0 auto;
     margin-top:25px;
@@ -317,6 +295,7 @@ label, #toggle{
 #copyright .copyUl {
     float:left; 
     list-style: none;
+    padding-inline-start: 0px;
 }
 #copyright .copyUl > li {
     color:#666; 
@@ -337,7 +316,12 @@ label, #toggle{
 }
 
 /* 반응형 웹 */
-@media screen and (min-width: 320px) and (max-width:600px){
+
+@media screen and (max-width:600px){
+
+    #nav{
+        display: none;
+    }
 
     /* 메인메뉴 */
     #sns{
@@ -352,11 +336,36 @@ label, #toggle{
     #menubox{
         display: block;
         top: 15px;
-        left: 430px;
+        left: 90%;
     }
-    #nav{
-        display: none;
+    input[id="menuicon"] + label {
+        display: block;
+        width: 36px;
+        height: 30px;
+        position: relative;
+        cursor: pointer;
     }
+    input[id="menuicon"] + label span {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        border-radius: 30px;
+        background-color: #000;
+        transition: all .35s;
+    } 
+
+    input[id="menuicon"] + label span:nth-child(1){
+        top:0;
+    }
+    input[id="menuicon"] + label span:nth-child(2){
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    input[id="menuicon"] + label span:nth-child(3){
+        bottom:0;
+    }
+
     input[id="menuicon"]:checked + label span:nth-child(1){
         top: 50%;
         transform: translateY(-50%) rotate(45deg);
@@ -369,11 +378,9 @@ label, #toggle{
         transform: translateY(50%) rotate(-45deg);
     }
     .hd{
-        display: block;
         min-width: unset;
     }
     #header{
-        display: block;
         width: 100%;
     }
     #mainMenu{
@@ -399,19 +406,21 @@ label, #toggle{
     #topList{
         color: white !important;
     }
-    
     #subMenu{
         all: unset;
     }
     #sub{
         display: none !important;
+        visibility: hidden;
     }
     #subList{
         display: none !important;
+        visibility: hidden;
     }
 
-    /* 네비역역 */
+    /* 네비영역 */
     .nav_menu{
+        display: block;
         width: 100%;
         position: relative;
         background: #363636;
@@ -422,7 +431,7 @@ label, #toggle{
     }
     .nav_ul li{
         all: unset !important;
-        float:none; 
+        
         margin:0;
     }
     .nav_ul li a{
@@ -470,14 +479,9 @@ label, #toggle{
     #ftWeb{
         display: block;
     }
-<<<<<<< HEAD
 }
 
-
-
 /* contents영역 */
-*{padding: 0px; margin: 0px;}
-
 @font-face {
     font-family: "NanumGothic";
     src: url("fonts/NanumGothic.ttf"); }
@@ -488,70 +492,7 @@ label, #toggle{
 
 body { font-family: "NanumGothic";}
 
-.header{
-    width: 100%;
-    height: 108px;
-    background-color:white;
-
-}
-.main{
-    width: 100%;
-    height: 285px;
-    background-image: url("images/thumb.jpg");
-}
-
-#title{
-    padding-top: 100px;
-    text-align: center;
-    color: white;
-    font-family: "NanumGothicBold";
-    font-size: 3.0em;
-    font-style: NanumGothicBold;
-}
-       
-.local{
-    display: block;
-    padding-top: 20px;
-    text-align: center;
-    color: white;
-    font-family: "NanumGothic";
-    font-size: 13px;
-}
-.local span.l_i{color: #dde4e9}
-
-.tap_menu{
-    height: 50px;
-    width: 100%;
-    position: relative;
-    background: #363636;
-}
-
-.tap_list{
-    list-style: none;
-}
-
-.tap_item{
-    position: relative;
-    float: left;
-    width: 33.333%;
-    margin: 0 0 0 -1px;
-}
-
-.tap_list a{
-    display:block; 
-    height:50px;
-    line-height:50px;
-    text-align:center;
-    text-decoration:none;
-    border:1px solid #d7d7d7; border-bottom:none; border-top:none;
-    font-size:19px;
-    color: white;
-}
-
-
 /* contents */
-
-
 #category_title {
     margin-top: 80px;
     font-size:30px; font-weight: bold;
@@ -560,27 +501,19 @@ body { font-family: "NanumGothic";}
     padding-bottom:12px; margin-bottom:35px
 }
 
-    
-    
 #item_li{
     list-style: none;
+    text-align: center;
 }
-
-
 .container{
     font-family: "NanumGothic";
-
 }
-
-.item_img{
-
-}
-
 .title_kr{
     width: 230px;
     padding: 2px;
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 800;
     font-family: "NanumGothicBold";
     text-align: center;
 }
@@ -590,6 +523,7 @@ body { font-family: "NanumGothic";}
     padding: 2px;
     margin-top: 2px;
     margin-bottom: 10px;
+    font-size: 16px;
     text-align: center;
 }
 
@@ -600,6 +534,3 @@ body { font-family: "NanumGothic";}
     background-color: #d90317;
     border-radius: 15px;
 }
-=======
-}
->>>>>>> origin/master

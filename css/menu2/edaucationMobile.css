@@ -1,9 +1,8 @@
  /* 모바일용 반응형 웹 */
- @media(max-width: 767px) {
+ @media(max-width: 766px) {
     
     body{
       background-color: whitesmoke;
-       
     }
 
     #cardimg{
@@ -12,7 +11,6 @@
     }
  
     div#founded{
-        
         width: 150px;
         height: 170px;
         margin-left: 10px;
@@ -30,7 +28,6 @@
 
     h5#cardtitle{
         font-size: 15px; 
-        
             background-color: #222222;
              border-top-left-radius: 8px;
             border-top-right-radius: 8px;
@@ -51,37 +48,47 @@
    
 /* 표 시작 */
 
-#eudcationTable{
-    border: 1px solid black;
-}
-   #educationday #empty{
-    border-spacing: 20px;
-    width: 10%;
-    height: 39px;
-    background-color: khaki;
-   
+#eudcationTable tr{
 }
 
-   #educationDay{
-    font-weight: bold;
-    background-color: khaki;
-    
+#empty{
+    width: 20% !important;
+    padding: 0;
+}
 
-    }
+#educationDay{
+    padding: 0 !important;
+    width: 20%;
+}
 
 
 #educationContent{
-    background-color: khaki;
-    font-weight: bold;
-
+    width: 60% !important;
 }
 
 #eudcationContent2{
-    white-space: nowrap;
 }
 #seoul{
+}
 
-   text-align: center;
+#id{
+    text-align: center; 
+    padding: 0 !important;
+}
+#eudcationContent2{
+    padding: 0 !important;
+}
+
+#eudcationContent3{
+    padding: 0 !important;
+}
+
+#seoul{
+    text-align: center;
+}
+
+#educationTable{
+    border: 1px solid lightgray;
 }
 /* 모바일용 끝 */
  }

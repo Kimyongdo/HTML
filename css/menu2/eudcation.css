@@ -12,9 +12,9 @@ h5#cardtitle{
     color: white;   
     font-size: 15px; 
     padding: 10px; 
-        background-color: #222222;
-         border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
+    background-color: #222222;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 img#cardimg{
     margin-top: 5px;
@@ -60,7 +60,7 @@ div#eudcation img{
     padding: 5px; 
     font-size: 15px; 
     padding-left: 120px; 
-     padding-right: 120px;
+    padding-right: 120px;
 }
 
 #educationDay{
