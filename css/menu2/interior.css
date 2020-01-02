@@ -1,0 +1,47 @@
+#board {
+    background-color: #ececec;
+    padding-left: 0;
+    width: 300px;
+    padding-right: 2px;
+    border-left: 15px solid #ececec;
+}
+
+#content {
+    color: #666666;
+    font-size: 15px;
+    margin-top: -10px;
+}
+
+#explain {
+    color: grey;
+    margin-top: -20px;
+    font-size: 22px;
+    line-height: 1.9;
+}
+
+#issacImg {
+    display: block;
+    margin-top: 25px;
+    width: 90%;
+}
+
+#interiorPointDiv {
+    margin-top: 150px;
+    padding-left: 80px;
+}
+
+#interiorExplain {
+    font-size: 22px;
+    color: #666666;
+}
+
+#interiorExplainName {
+    animation-delay: 0.3s;
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+tr td #ganpan {
+    font-size: 16px;
+    font-weight: bold;
+}

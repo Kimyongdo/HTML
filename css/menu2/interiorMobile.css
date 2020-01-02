@@ -1,0 +1,41 @@
+ /* 모바일용 반응형 웹 */
+ @media(max-width: 767px) {
+    body{
+      background-color: whitesmoke;
+    }
+
+    #explain{
+        font-size: 15px;
+    }
+    
+    #issacImg{
+      display:block; 
+      margin: 0px auto; 
+      margin-top: 25px;
+      width: 100%;
+      height: 400px;
+  }
+
+  #interiorPointDiv{
+   all: unset;
+  margin-top: 80px;
+   
+  }
+
+   td #ganpan{
+    font-size: 10px;
+  }
+  
+  td img{
+    width: 230px;
+    height: 150px;
+  }
+   
+  td #content{
+    font-size: 11px;
+  }
+  
+ 
+
+    
+}

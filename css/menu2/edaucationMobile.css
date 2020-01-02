@@ -1,0 +1,94 @@
+ /* 모바일용 반응형 웹 */
+ @media(max-width: 766px) {
+    
+    body{
+      background-color: whitesmoke;
+    }
+
+    #cardimg{
+      width: 30px;
+      height: 70px;
+    }
+ 
+    div#founded{
+        width: 150px;
+        height: 170px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    p#content{
+        padding: 0px;
+        margin: 0px;
+        font-size:13px; 
+        color: black;
+        white-space: nowrap;
+        font-weight: bold;
+    }
+
+    h5#cardtitle{
+        font-size: 15px; 
+            background-color: #222222;
+             border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+    }
+    
+
+    /* 교육사진내용 */
+    #eudcation{
+        padding-left: 10px;
+    }
+    #eudcation img{
+        width: 92%;
+        height: 100%;
+        padding: 3px;
+        margin: 3px;
+    }
+
+   
+/* 표 시작 */
+
+#eudcationTable tr{
+}
+
+#empty{
+    width: 20% !important;
+    padding: 0;
+}
+
+#educationDay{
+    padding: 0 !important;
+    width: 20%;
+}
+
+
+#educationContent{
+    width: 60% !important;
+}
+
+#eudcationContent2{
+}
+#seoul{
+}
+
+#id{
+    text-align: center; 
+    padding: 0 !important;
+}
+#eudcationContent2{
+    padding: 0 !important;
+}
+
+#eudcationContent3{
+    padding: 0 !important;
+}
+
+#seoul{
+    text-align: center;
+}
+
+#educationTable{
+    border: 1px solid lightgray;
+}
+/* 모바일용 끝 */
+ }

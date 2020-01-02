@@ -21,16 +21,19 @@ $("#menubox").click(function() {
         $("#nav").slideUp("slow", function(){                   
             a=0;
         });
-
     }
 });
 });
-$(document).ready(function($) {
+
 $( window ).resize(function() {
     var windowWidth = $( window ).width();
-if(windowWidth>601){
-   $("nav").css("visibility", "visibility");
-    $("nav").css("display", "block");
-}
+ if(windowWidth>601){
+    $("#nav").show();
+    $("#menuicon label span::nth-child(1)").css("top", 0);
+    $("#menuicon label span::nth-child(1)").css("top", "50%");
+    $("#menuicon label span::nth-child(1)").css("translateY", "-50%");
+    $("#menuicon label span::nth-child(1)").css("top", 0);
+ }else if(windowWidth<600){
+    $("#nav").hide();
+ }
 });         
-});

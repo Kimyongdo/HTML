@@ -1,0 +1,101 @@
+
+div#founded{
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 190px;
+    height: 180px;
+    margin-left:30px;
+     
+}
+
+h5#cardtitle{
+    color: white;   
+    font-size: 15px; 
+    padding: 10px; 
+    background-color: #222222;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+img#cardimg{
+    margin-top: 5px;
+    width: 5rem;
+    margin-bottom: -10px;
+}
+
+p#content{
+    padding: 0px;
+    margin: 0px;
+    font-size: 14px; 
+    color: grey;
+}
+
+p#subtitle{
+    font-size: 12px;
+    /* 자동줄바꿈 취소 */
+    white-space: nowrap
+}
+
+tr#educationday{
+    background-color: whitesmoke;
+    text-align: center;
+    }
+
+div#eudcation img{
+    padding-left: 10px;
+}
+
+/* 사진 */
+#eudcation{
+    margin-top: 60px;
+}
+
+
+/* 표 */
+
+#edudiv{
+    margin-top: 70px; 
+    color: #666666;
+}
+#empty{
+    padding: 5px; 
+    font-size: 15px; 
+    padding-left: 120px; 
+    padding-right: 120px;
+}
+
+#educationDay{
+    padding: 10px; 
+    font-size: 15px; 
+     padding-left: 100px; 
+     padding-right: 100px;
+     color: black;
+}
+
+#id{
+    text-align: center; 
+    padding: 20px;
+     padding-left: 20px;
+}
+
+#educationContent{
+    color: black;
+}
+
+#eudcationContent2{
+    padding-left: 10px; 
+    padding: 15px;
+}
+
+#eudcationContent3{
+    padding-left: 10px; 
+    padding: 15px; 
+    width: 630px;
+}
+
+#seoul{
+    text-align: center;
+}
+
+#educationTable{
+    border: 1px solid lightgray;
+}
