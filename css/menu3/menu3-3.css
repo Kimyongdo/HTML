@@ -1,124 +1,48 @@
 /* body */
+/* body */
 body{
     padding: 0px;
-    margin: 0px;
     word-break:break-all;
     overflow-x: hidden;
+    margin: 0px;
+    font-size: unset !important;
+    font-weight: unset !important;
+    line-height: unset !important;
+    font-weight: unset !important;
+}
+
+dl{
+    display: block;
+    margin-block-start: 0em !important;
+    margin-block-end: 0em !important;
+    margin-inline-start: 0px !important;
+    margin-inline-end: 0px !important;
+    margin-bottom: 0rem !important
 }
 
 /* ggam */
-
-
-.header{
-    display: block;
-    position: relative;
-    z-index: 15;
-    margin: 0;
-    height: 108px;
-  }
-  
-  
-  .image_menu{
-    width: 100%;
-    height: 250px;
-    background-color: black;
-  }
-  
-  #container_title {
-      margin-bottom: 20px;
-      font-size: 47px;
-      font-weight: 600;
-      color: #fff;
-      text-align: center;
-      padding-top: 100px;
-  }
-  
-  .local {
-      display: block;
-      text-align: center;
-  }
-  
-  .local span:first-child {
-      padding: 0 16px 0 0;
-  }
-  
-  .local span {
-      padding: 0 16px 0 8px;
-      color: #fff;
-      font-size: 13px;
-  }
-  
-  .nav_menu{
-    height: 50px;
-    width: 100%;
-    position: relative;
-    background: #363636;
-  }
-  
-  .nav_list{
-      list-style: none;
-      margin: 0 auto;
-  }
-  
-  .nav_item{
-    position: relative;
-      float: left;
-      margin: 0 0 0 -1px;
-      width: 33.333%;
-  }
-  
-  .nav_link{
-    display: block;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    text-decoration: none;
-    border: 1px solid #d7d7d7;
-    border-bottom: none;
-    border-top: none;
-    font-size: 19px;
-    color: #fff;
-  }
-  
-  .nav_link_on{
-    display: block;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    text-decoration: none;
-    border: 1px solid #d7d7d7;
-    border-bottom: none;
-    border-top: none;
-    font-size: 19px;
-    color: #282828;
-    background: #fff;
-  }
-  
   #wrapper{
     z-index: 5;
-    margin-left: 150px;
+    margin: 0 auto;
     width: 100%;
     zoom: 1;
-    
-  }
+}
   
   #container {
       margin: 0 auto;
       z-index: 4;
       position: relative;
       padding: 0;
-      width: 100%;
+      width: 1100px;
       min-height: 500px;
       height: auto !important;
-      height: 500px;
       font-size: 1em;
       zoom: 1;
-      
   }
-  
+
   #ctt {
       margin: 0;
-      padding: 50px;
+      padding: 0px;
   }
   
   .subTitle31 {
@@ -177,8 +101,11 @@ body{
   .brand_greeting_con {
       padding-top: 20px;
       margin: 15px 0 80px 0;
-      background: url(/img/brand/brand_greeting_img01.jpg) no-repeat right top;
   }
+  .brand_greeting_img2 {
+    text-align: left;
+    padding: 15px 0 0 400px;
+}
   
   .conText15 {
       font-size: 15px;
@@ -198,14 +125,14 @@ body{
 .hd{
     position: relative;
     z-index: 100;
-    min-width: 1100px;
+    min-width: 1140px;
 }
 #header{
     position: relative;
     margin: 0 auto;
     padding: 0;
     zoom: 1;
-    width: 1100px;
+    width: 1140px;
 }
 #Logo{
     float: left;
@@ -228,6 +155,7 @@ body{
 input[id="menuicon"]{
     display: none
 }
+
 #mainMenu{
     display: block;
     position: relative;
@@ -239,6 +167,7 @@ input[id="menuicon"]{
     position: absolute;
     z-index: 15;
     width: 100%;
+    height: 100%;
 }
 #menu:after{
     display:block; 
@@ -257,6 +186,7 @@ input[id="menuicon"]{
     z-index:10; 
     clear:both; 
     zoom:1;
+    padding-inline-start: 0px;
     list-style:none;
 }
 #main:after{
@@ -268,7 +198,7 @@ input[id="menuicon"]{
 #mainList{
     position:relative; 
     float:left; 
-    width:115px;
+    width:140px;
 }
 #topList{
     display:block; 
@@ -308,7 +238,7 @@ input[id="menuicon"]{
 #sub{
     display:none; 
     position:absolute; 
-    width:140px; 
+    width:140px;
     top:90px; 
     font-size: 14px; 
     text-align: left;
@@ -372,7 +302,7 @@ input[id="menuicon"]{
     background: #363636;
 }
 .nav_ul{
-    width:1100px;
+    width:1140px;
     margin:0 auto; 
     list-style: none; 
 }
@@ -444,7 +374,7 @@ label, #toggle{
     margin-top: 70px;
 }
 #company{
-    width:1010px;
+    width:1140px;
     margin:0 auto;
 }
 .logo {
@@ -471,7 +401,7 @@ label, #toggle{
     text-decoration:none
 }
 #copyright {
-    width:1010px;
+    width:1140px;
     height:176px; 
     margin:0 auto;
     margin-top:25px;

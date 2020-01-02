@@ -10,14 +10,14 @@ body{
 .hd{
     position: relative;
     z-index: 100;
-    min-width: 1100px;
+    min-width: 1140px;
 }
 #header{
     position: relative;
     margin: 0 auto;
     padding: 0;
     zoom: 1;
-    width: 1100px;
+    width: 1140px;
 }
 #Logo{
     float: left;
@@ -52,6 +52,7 @@ input[id="menuicon"]{
     position: absolute;
     z-index: 15;
     width: 100%;
+    height: 100%;
 }
 #menu:after{
     display:block; 
@@ -70,6 +71,7 @@ input[id="menuicon"]{
     z-index:10; 
     clear:both; 
     zoom:1;
+    padding-inline-start: 0px;
     list-style:none;
 }
 #main:after{
@@ -81,7 +83,7 @@ input[id="menuicon"]{
 #mainList{
     position:relative; 
     float:left; 
-    width:115px;
+    width:140px;
 }
 #topList{
     display:block; 
@@ -121,7 +123,7 @@ input[id="menuicon"]{
 #sub{
     display:none; 
     position:absolute; 
-    width:140px; 
+    width:140px;
     top:90px; 
     font-size: 14px; 
     text-align: left;
@@ -185,7 +187,7 @@ input[id="menuicon"]{
     background: #363636;
 }
 .nav_ul{
-    width:1100px;
+    width:1140px;
     margin:0 auto; 
     list-style: none; 
 }
@@ -259,7 +261,7 @@ label, #toggle{
     margin-top: 70px;
 }
 #company{
-    width:1010px;
+    width:1140px;
     margin:0 auto;
 }
 .logo {
@@ -286,7 +288,7 @@ label, #toggle{
     text-decoration:none
 }
 #copyright {
-    width:1010px;
+    width:1140px;
     height:176px; 
     margin:0 auto !important;
     margin-top:25px;
