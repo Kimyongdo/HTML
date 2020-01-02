@@ -81,7 +81,6 @@ input[id="menuicon"]{
 #mainList{
     position:relative; 
     float:left; 
-    text-decoration:none; 
     width:115px;
 }
 #topList{
@@ -295,6 +294,7 @@ label, #toggle{
 #copyright .copyUl {
     float:left; 
     list-style: none;
+    padding-inline-start: 0px;
 }
 #copyright .copyUl > li {
     color:#666; 
@@ -430,7 +430,6 @@ label, #toggle{
     }
     .nav_ul li{
         all: unset !important;
-        
         margin:0;
     }
     .nav_ul li a{
