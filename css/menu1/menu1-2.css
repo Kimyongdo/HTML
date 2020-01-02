@@ -463,6 +463,59 @@ label, #toggle{
         padding: 4px;
     }
 
+    /* 컨텐츠 */
+    #category_title {
+        margin-top: 40px;
+        text-align: center;
+        font-size: 25px; font-weight: bold;
+        color: #d90317; text-decoration:none;
+        border-bottom:1px solid #d8d8d8;
+        padding-bottom:12px; margin-bottom:35px
+    }
+    
+        
+        
+    #item_li{
+        list-style: none;
+        text-align: center;
+    
+    }
+    
+    
+    .container{
+        font-family: "NanumGothic";
+    
+    }
+    
+    
+    .title_kr{
+        display: inline-block;
+        width: 50%;
+        padding: 2px;
+        margin-top: 10px;
+        font-size: 20px;
+        font-family: "NanumGothicBold";
+        text-align: center;
+    }
+    
+    .title_eng{
+        display: inline-block;
+        width: 50%;
+        padding: 2px;
+        margin-top: 2px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    
+    .title_kr:hover{
+        width: 210px;
+        font-family: "NanumGothicBold";
+        color: white;
+        background-color: #d90317;
+        border-radius: 15px;
+    }
+
+
     /* 푸터영역 */
     #ft{
         display: none;
@@ -470,7 +523,6 @@ label, #toggle{
     #ftWeb{
         display: block;
     }
-<<<<<<< HEAD
 }
 
 /* contents영역 */
@@ -552,8 +604,8 @@ body { font-family: "NanumGothic";}
 
 #category_title {
     margin-top: 80px;
-    font-size:30px; font-weight: bold;
-    color:#d90317; text-decoration:none;
+    font-size: 30px; font-weight: bold;
+    color: #d90317; text-decoration:none;
     border-bottom:1px solid #d8d8d8;
     padding-bottom:12px; margin-bottom:35px
 }
@@ -562,6 +614,7 @@ body { font-family: "NanumGothic";}
     
 #item_li{
     list-style: none;
+    text-align: center;
 
 }
 
@@ -573,6 +626,7 @@ body { font-family: "NanumGothic";}
 
 
 .title_kr{
+    display: inline-block;
     width: 230px;
     padding: 2px;
     margin-top: 10px;
@@ -582,6 +636,7 @@ body { font-family: "NanumGothic";}
 }
 
 .title_eng{
+    display: inline-block;
     width: 230px;
     padding: 2px;
     margin-top: 2px;
@@ -596,6 +651,3 @@ body { font-family: "NanumGothic";}
     background-color: #d90317;
     border-radius: 15px;
 }
-=======
-}
->>>>>>> origin/master
